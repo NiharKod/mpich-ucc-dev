@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Sets paths
 MPICH_PATH=/home/nkodkani/mpich/build/install
 ROCM_PATH=/soft/compilers/rocm/rocm-6.3.2/lib
 
