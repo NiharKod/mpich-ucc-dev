@@ -4,15 +4,22 @@ UCX_INSTALL = /home/nkodkani/ucx/build/install
 ROCM_LIB    = /soft/compilers/rocm/rocm-6.3.2/lib
 
 CC = /home/nkodkani/mpich/build/install/bin/mpicc
-CFLAGS = -I$(UCC_INSTALL)/include -I$(UCX_INSTALL)/include
+
+ROCM_INC = /soft/compilers/rocm/rocm-6.3.2/include
+
+CFLAGS = -I$(UCC_INSTALL)/include \
+         -I$(UCX_INSTALL)/include \
+         -I$(ROCM_INC) \
+         -D__HIP_PLATFORM_AMD__
+
 LDFLAGS = -L$(UCC_INSTALL)/lib -lucc \
           -L$(UCX_INSTALL)/lib -lucp -lucs -luct \
-          -L$(ROCM_LIB)
+          -L$(ROCM_LIB) -lamdhip64
 RPATH = -Wl,-rpath,$(UCC_INSTALL)/lib \
         -Wl,-rpath,$(UCX_INSTALL)/lib \
         -Wl,-rpath,$(ROCM_LIB)
 
-SRC = ucc_allreduce_bench.c
+SRC = ucc_allreduce_bench_gpu.c
 TARGET = ucc_allreduce_bench
 
 all: $(TARGET)

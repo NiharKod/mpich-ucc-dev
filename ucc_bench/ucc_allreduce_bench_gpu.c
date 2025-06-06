@@ -3,6 +3,7 @@
 #include <string.h>
 #include <mpi.h>
 #include <ucc/api/ucc.h>
+#include <hip/hip_runtime.h>
 
 #define UCC_CHECK(status)                          \
     do {                                           \
@@ -115,10 +116,24 @@ int main(int argc, char **argv)
         UCC_CHECK(ucc_context_progress(ctx));
     } while (ucc_team_create_test(team) == UCC_INPROGRESS);
 
-    uint8_t *src_buff = (uint8_t*)malloc(buff_size * sizeof(uint8_t));
-    uint8_t *dst_buff = (uint8_t*)malloc(buff_size * sizeof(uint8_t));
-    memset(src_buff, rank, buff_size);
+    /* we need to use hip malloc */
+    uint8_t *src_buff;
+    uint8_t *dst_buff;
 
+    hipError_t err;
+    err = hipMalloc((void **)&src_buff, buff_size);
+    if (err != hipSuccess) {
+        fprintf(stderr, "hipMalloc src_buff failed: %s\n", hipGetErrorString(err));
+        exit(1);
+    }
+    err = hipMalloc((void**)&dst_buff, buff_size);
+    if (err != hipSuccess) {
+        fprintf(stderr, "hipMalloc dst_buff failed: %s\n", hipGetErrorString(err));
+        exit(1);
+    }
+
+    /* Fill src_buff with `rank` */
+    hipMemset(src_buff, rank, buff_size);
 
     ucc_coll_args_t coll_args = {
         .mask = 0, 
@@ -128,7 +143,7 @@ int main(int argc, char **argv)
                 .buffer = src_buff,
                 .count = buff_size,
                 .datatype = UCC_DT_INT8,
-                .mem_type = UCC_MEMORY_TYPE_HOST
+                .mem_type = UCC_MEMORY_TYPE_ROCM
             }
         },
         .dst = {
@@ -136,11 +151,12 @@ int main(int argc, char **argv)
                 .buffer = dst_buff,
                 .count = buff_size,
                 .datatype = UCC_DT_INT8,
-                .mem_type = UCC_MEMORY_TYPE_HOST
+                .mem_type = UCC_MEMORY_TYPE_ROCM
             }
         },
         .op = UCC_OP_SUM,
-//        .flags = 0 
+      .flags = UCC_COLL_ARGS_FLAG_CONTIG_SRC_BUFFER | 
+             UCC_COLL_ARGS_FLAG_CONTIG_DST_BUFFER
     };
 
 
@@ -153,19 +169,24 @@ int main(int argc, char **argv)
     }
 
     UCC_CHECK(ucc_collective_finalize(req));
+
+    uint8_t *host_result = (uint8_t*)malloc(buff_size);
+    hipMemcpy(host_result, dst_buff, buff_size, hipMemcpyDeviceToHost);
+
     uint64_t sum = 0;
     for (size_t i = 0; i < buff_size; i++) {
-        sum += dst_buff[i];
+        sum += host_result[i];
     }
-    printf("Rank %d: Allreduce result = %d\n", rank, sum);
+    printf("Rank %d: Allreduce result = %lu\n", rank, sum);
 
     if (rank == 0){
         printf("Correct sum %d\n", correct_answer(size, buff_size));
     }
 
     /* Cleanup */
-    free(src_buff);
-    free(dst_buff);
+    hipFree(src_buff);
+    hipFree(dst_buff);
+    free(host_result);
     UCC_CHECK(ucc_team_destroy(team));
     UCC_CHECK(ucc_context_destroy(ctx));
     UCC_CHECK(ucc_finalize(lib));  
