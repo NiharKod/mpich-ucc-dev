@@ -1,29 +1,26 @@
-# === Installation paths ===
 UCC_INSTALL = /home/nkodkani/ucc/build/install
 UCX_INSTALL = /home/nkodkani/ucx/build/install
-CUDA_HOME   = /soft/compilers/cuda/cuda-12.3.0
+ROCM_LIB    = /soft/compilers/rocm/rocm-6.3.2/lib
 
-# === Compiler ===
 CC = /home/nkodkani/mpich/build/install/bin/mpicc
 
-# === Include and Link flags ===
+ROCM_INC = /soft/compilers/rocm/rocm-6.3.2/include
+
 CFLAGS = -I$(UCC_INSTALL)/include \
          -I$(UCX_INSTALL)/include \
-         -I$(CUDA_HOME)/include
+         -I$(ROCM_INC) \
+         -D__HIP_PLATFORM_AMD__
 
 LDFLAGS = -L$(UCC_INSTALL)/lib -lucc \
           -L$(UCX_INSTALL)/lib -lucp -lucs -luct \
-          -L$(CUDA_HOME)/lib64 -lcudart -lcuda
-
+          -L$(ROCM_LIB) -lamdhip64
 RPATH = -Wl,-rpath,$(UCC_INSTALL)/lib \
         -Wl,-rpath,$(UCX_INSTALL)/lib \
-        -Wl,-rpath,$(CUDA_HOME)/lib64
+        -Wl,-rpath,$(ROCM_LIB)
 
-# === Source and target ===
 SRC = ucc_allreduce_cuda.c
 TARGET = ucc_allreduce_bench
 
-# === Build rules ===
 all: $(TARGET)
 
 $(TARGET): $(SRC)
