@@ -1,0 +1,3 @@
+[submodule "external/mpich-ucc"]
+	path = external/mpich-ucc
+	url = https://github.com/niharkod/mpich.git
