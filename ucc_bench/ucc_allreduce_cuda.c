@@ -4,7 +4,7 @@
 #include <mpi.h>
 #include <ucc/api/ucc.h>
 #include <cuda_runtime.h>
-
+#include <cuda_runtime_api.h>
 #define UCC_CHECK(status)                          \
     do {                                           \
         ucc_status_t ucc_status = status;          \
@@ -64,6 +64,38 @@ int main(int argc, char **argv)
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &size);
 
+    /* CUDA CHECKS */
+
+
+    int device_count = 0;
+    cudaError_t cerr = cudaGetDeviceCount(&device_count);  // Already declared here
+    if (cerr != cudaSuccess || device_count == 0) {
+        fprintf(stderr, "Rank %d: No CUDA-capable device found or error: %s\n",
+                rank, cudaGetErrorString(cerr));
+        MPI_Abort(MPI_COMM_WORLD, 1);
+    }
+
+    int device_id = rank % device_count;
+    cerr = cudaSetDevice(device_id);  // reuse existing cerr
+    if (cerr != cudaSuccess) {
+        fprintf(stderr, "Rank %d: Failed to set CUDA device %d: %s\n",
+                rank, device_id, cudaGetErrorString(cerr));
+        MPI_Abort(MPI_COMM_WORLD, 1);
+    }
+
+    struct cudaDeviceProp prop;
+    cerr = cudaGetDeviceProperties(&prop, device_id);  // still reuse cerr
+
+    if (cerr == cudaSuccess) {
+        printf("Rank %d using CUDA device %d: %s (Compute Capability %d.%d)\n",
+            rank, device_id, prop.name, prop.major, prop.minor);
+        fflush(stdout);  // ensure it prints in MPI programs
+    } else {
+        fprintf(stderr, "Rank %d: Failed to get device properties: %s\n",
+                rank, cudaGetErrorString(cerr));
+    }
+
+
     // UCC library setup
     ucc_lib_h lib;
     ucc_lib_config_h lib_config;
@@ -116,7 +148,7 @@ int main(int argc, char **argv)
 
     // Allocate device memory using CUDA
     uint8_t *src_buff, *dst_buff;
-    cudaError_t cerr;
+//    cudaError_t cerr;
     cerr = cudaMalloc((void **)&src_buff, buff_size);
     if (cerr != cudaSuccess) {
         fprintf(stderr, "cudaMalloc src_buff failed: %s\n", cudaGetErrorString(cerr));

@@ -13,7 +13,7 @@ CFLAGS = -I$(UCC_INSTALL)/include \
 
 LDFLAGS = -L$(UCC_INSTALL)/lib -lucc \
           -L$(UCX_INSTALL)/lib -lucp -lucs -luct \
-          -L$(CUDA_HOME)/lib64 -lcudart -lcuda
+          -L$(CUDA_HOME)/lib64 -lcudart
 
 RPATH = -Wl,-rpath,$(UCC_INSTALL)/lib \
         -Wl,-rpath,$(UCX_INSTALL)/lib \
