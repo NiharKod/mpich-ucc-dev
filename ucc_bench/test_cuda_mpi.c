@@ -2,20 +2,30 @@
 #include <cuda_runtime.h>
 #include <stdio.h>
 
-int main(int argc, char **argv) {
+int main(int argc, char** argv) {
     MPI_Init(&argc, &argv);
 
-    float *gpu_buf;
-    cudaMalloc((void **)&gpu_buf, sizeof(float));
-    cudaMemset(gpu_buf, 1, sizeof(float));
+    int rank;
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 
-    MPI_Allreduce(MPI_IN_PLACE, gpu_buf, 1, MPI_FLOAT, MPI_SUM, MPI_COMM_WORLD);
+    float *sendbuf, *recvbuf;
+    cudaMalloc(&sendbuf, sizeof(float));
+    cudaMalloc(&recvbuf, sizeof(float));
+
+    float val = (float)rank;
+    cudaMemcpy(sendbuf, &val, sizeof(float), cudaMemcpyHostToDevice);
+
+    // Native MPICH will detect this is a GPU pointer if built with CUDA-aware support
+    MPI_Allreduce(sendbuf, recvbuf, 1, MPI_FLOAT, MPI_SUM, MPI_COMM_WORLD);
 
     float result;
-    cudaMemcpy(&result, gpu_buf, sizeof(float), cudaMemcpyDeviceToHost);
-    printf("Result: %f\n", result);
+    cudaMemcpy(&result, recvbuf, sizeof(float), cudaMemcpyDeviceToHost);
+    if (rank == 0) {
+        printf("Allreduce result: %f\n", result);
+    }
 
-    cudaFree(gpu_buf);
+    cudaFree(sendbuf);
+    cudaFree(recvbuf);
     MPI_Finalize();
     return 0;
 }
