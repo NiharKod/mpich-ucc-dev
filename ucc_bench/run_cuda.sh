@@ -6,7 +6,7 @@ CUDA_PATH=/soft/compilers/cuda/cuda-12.3.0/lib64
 
 # Run UCC + CUDA Allreduce benchmark on gpu06
 ${MPICH_PATH}/bin/mpiexec \
-	-host gpu06 \
+	-host gpu07 \
 	-n 4 \
 	-ppn 4 \
 	-genv FI_PROVIDER=verbs \

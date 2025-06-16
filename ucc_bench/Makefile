@@ -7,7 +7,8 @@ CUDA_HOME   = /soft/compilers/cuda/cuda-12.3.0
 CC = /home/nkodkani/mpich/build/install/bin/mpicc
 
 # === Include and Link flags ===
-CFLAGS = -I$(UCC_INSTALL)/include \
+CFLAGS = -g -O0 \
+				 -I$(UCC_INSTALL)/include \
          -I$(UCX_INSTALL)/include \
          -I$(CUDA_HOME)/include
 
@@ -20,7 +21,7 @@ RPATH = -Wl,-rpath,$(UCC_INSTALL)/lib \
         -Wl,-rpath,$(CUDA_HOME)/lib64
 
 # === Source and target ===
-SRC = ucc_allreduce_cuda.c
+SRC = test_cuda_mpi.c
 TARGET = ucc_allreduce_bench
 
 # === Build rules ===
