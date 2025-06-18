@@ -14,6 +14,5 @@ ${MPICH_PATH}/bin/mpiexec \
 	-genv MPIR_CVAR_ALLREDUCE_INTRA_ALGORITHM=ccl \
 	-genv MPIR_CVAR_ALLREDUCE_CCL=ucc \
 	-genv MPIR_CVAR_DEVICE_COLLECTIVES=none \
-	-genv UCC_LOG_LEVEL=DEBUG \
 	-genv LD_LIBRARY_PATH=${CUDA_PATH}:${LD_LIBRARY_PATH} \
 	./ucc_allreduce_bench

@@ -1,0 +1,611 @@
+Rank 0 PID 22377 on gpu06 ready for attach
+Rank 2 PID 22379 on gpu06 ready for attach
+[1750190107.898849] [gpu06:22379:0]   ucc_component.c:57   UCC  DEBUG failed to load UCC component library: /home/nkodkani/ucc/build/install/lib/ucc/libucc_tl_rccl.so (libhsa-runtime64.so.1: cannot open shared object file: No such file or directory)
+[1750190107.899158] [gpu06:22377:0]   ucc_component.c:57   UCC  DEBUG failed to load UCC component library: /home/nkodkani/ucc/build/install/lib/ucc/libucc_tl_rccl.so (libhsa-runtime64.so.1: cannot open shared object file: No such file or directory)
+[1750190107.902168] [gpu06:22379:0]   ucc_component.c:57   UCC  DEBUG failed to load UCC component library: /home/nkodkani/ucc/build/install/lib/ucc/libucc_mc_rocm.so (libamdhip64.so.6: cannot open shared object file: No such file or directory)
+[1750190107.902424] [gpu06:22377:0]   ucc_component.c:57   UCC  DEBUG failed to load UCC component library: /home/nkodkani/ucc/build/install/lib/ucc/libucc_mc_rocm.so (libamdhip64.so.6: cannot open shared object file: No such file or directory)
+[1750190107.904372] [gpu06:22379:0]   ucc_component.c:57   UCC  DEBUG failed to load UCC component library: /home/nkodkani/ucc/build/install/lib/ucc/libucc_ec_rocm.so (libamdhip64.so.6: cannot open shared object file: No such file or directory)
+[1750190107.904645] [gpu06:22377:0]   ucc_component.c:57   UCC  DEBUG failed to load UCC component library: /home/nkodkani/ucc/build/install/lib/ucc/libucc_ec_rocm.so (libamdhip64.so.6: cannot open shared object file: No such file or directory)
+[1750190107.905497] [gpu06:22379:0]   ucc_proc_info.c:311  UCC  DEBUG proc pid 22379, host gpu06, host_hash 3721812716735043095, sockid 0, numaid 0
+[1750190107.905506] [gpu06:22379:0] ucc_constructor.c:191  UCC  INFO  version: 1.5.0, loaded from: /home/nkodkani/ucc/build/install/lib/libucc.so.1, cfg file: n/a
+[1750190107.905522] [gpu06:22379:0]          ucc_mc.c:67   UCC  DEBUG mc cpu mc initialized
+[1750190107.905531] [gpu06:22379:0]         mc_cuda.c:65   cuda mc DEBUG driver version 12090
+[1750190107.905537] [gpu06:22379:0]          ucc_mc.c:67   UCC  DEBUG mc cuda mc initialized
+[1750190107.905548] [gpu06:22379:0]          ucc_ec.c:63   UCC  DEBUG ec cpu ec initialized
+[1750190107.905700] [gpu06:22377:0]   ucc_proc_info.c:311  UCC  DEBUG proc pid 22377, host gpu06, host_hash 3721812716735043095, sockid 0, numaid 0
+[1750190107.905709] [gpu06:22377:0] ucc_constructor.c:191  UCC  INFO  version: 1.5.0, loaded from: /home/nkodkani/ucc/build/install/lib/libucc.so.1, cfg file: n/a
+[1750190107.905726] [gpu06:22377:0]          ucc_mc.c:67   UCC  DEBUG mc cpu mc initialized
+[1750190107.905737] [gpu06:22377:0]         mc_cuda.c:65   cuda mc DEBUG driver version 12090
+[1750190107.905744] [gpu06:22377:0]          ucc_mc.c:67   UCC  DEBUG mc cuda mc initialized
+[1750190107.905754] [gpu06:22377:0]          ucc_ec.c:63   UCC  DEBUG ec cpu ec initialized
+[1750190107.915082] [gpu06:22377:0]          ucc_ec.c:63   UCC  DEBUG ec cuda ec initialized
+[1750190107.915107] [gpu06:22377:0]    cl_basic_lib.c:20   CL_BASIC DEBUG initialized lib object: 0x379fe010
+[1750190107.915127] [gpu06:22377:0]         ucc_lib.c:152  UCC  DEBUG lib_prefix "UCC_": initialized component "basic" score 10
+[1750190107.915145] [gpu06:22377:0]     tl_cuda_lib.c:35   TL_CUDA DEBUG initialized lib object: 0x37dbc640
+[1750190107.915157] [gpu06:22377:0]     tl_self_lib.c:20   TL_SELF DEBUG initialized lib object: 0x381ec6d0
+[1750190107.915183] [gpu06:22377:0]      tl_ucp_lib.c:68   TL_UCP DEBUG initialized lib object: 0x37254390
+[1750190107.915880] [gpu06:22379:0]          ucc_ec.c:63   UCC  DEBUG ec cuda ec initialized
+[1750190107.915900] [gpu06:22379:0]    cl_basic_lib.c:20   CL_BASIC DEBUG initialized lib object: 0x1bc6b8c0
+[1750190107.915910] [gpu06:22379:0]         ucc_lib.c:152  UCC  DEBUG lib_prefix "UCC_": initialized component "basic" score 10
+[1750190107.915921] [gpu06:22379:0]     tl_cuda_lib.c:35   TL_CUDA DEBUG initialized lib object: 0x1c029ee0
+[1750190107.915929] [gpu06:22379:0]     tl_self_lib.c:20   TL_SELF DEBUG initialized lib object: 0x1c45aa30
+[1750190107.915948] [gpu06:22379:0]      tl_ucp_lib.c:68   TL_UCP DEBUG initialized lib object: 0x1b4c3390
+[1750190107.950420] [gpu06:22377:0] tl_cuda_context.c:71   TL_CUDA DEBUG initialized tl context: 0x381ecc70
+[1750190107.950641] [gpu06:22379:0] tl_cuda_context.c:71   TL_CUDA DEBUG initialized tl context: 0x1c45afd0
+Rank 1 PID 22378 on gpu06 ready for attach
+Rank 3 PID 22380 on gpu06 ready for attach
+[1750190108.048070] [gpu06:22378:0]   ucc_component.c:57   UCC  DEBUG failed to load UCC component library: /home/nkodkani/ucc/build/install/lib/ucc/libucc_tl_rccl.so (libhsa-runtime64.so.1: cannot open shared object file: No such file or directory)
+[1750190108.048092] [gpu06:22379:0]          parser.c:2363 UCX  WARN  unused environment variable: UCX_HOME
+[1750190108.048092] [gpu06:22379:0]          parser.c:2363 UCX  WARN  (set UCX_WARN_UNUSED_ENV_VARS=n to suppress this warning)
+[1750190108.048127] [gpu06:22379:0]  tl_ucp_context.c:320  TL_UCP DEBUG using EC for local copy
+[1750190108.048129] [gpu06:22379:0]  tl_ucp_context.c:337  TL_UCP DEBUG initialized tl context: 0x1b4e7140
+[1750190108.048148] [gpu06:22379:0] cl_basic_context.c:50   CL_BASIC DEBUG initialized cl context: 0x1c9d7d40
+[UCC OOB] Rank 2: Performing Iallgather with msglen = 8
+[UCC OOB] Rank 2: sbuf = 0x1c45aed0, rbuf = 0x1c9e8480
+[UCC OOB] Rank 2 sbuf[0] = 33
+[UCC OOB] Rank 2 sbuf[1] = 2
+[UCC OOB] Rank 2 sbuf[2] = 0
+[UCC OOB] Rank 2 sbuf[3] = 0
+[UCC OOB] Rank 2 sbuf[4] = 0
+[UCC OOB] Rank 2 sbuf[5] = 0
+[UCC OOB] Rank 2 sbuf[6] = 0
+[UCC OOB] Rank 2 sbuf[7] = 0
+[UCC OOB] Rank 2 rbuf[0] = 32
+[UCC OOB] Rank 2 rbuf[1] = 251
+[UCC OOB] Rank 2 rbuf[2] = 63
+[UCC OOB] Rank 2 rbuf[3] = 2
+[UCC OOB] Rank 2 rbuf[4] = 80
+[UCC OOB] Rank 2 rbuf[5] = 127
+[UCC OOB] Rank 2 rbuf[6] = 0
+[UCC OOB] Rank 2 rbuf[7] = 0
+[UCC OOB] Rank 2: sendtype = MPIR_UINT8 (0x4c00083e), recvtype = MPIR_UINT8 (0x4c00083e)
+[DBG] Rank 2 sees comm->remote_size = 4, local_size = 4
+[1750190108.048525] [gpu06:22380:0]   ucc_component.c:57   UCC  DEBUG failed to load UCC component library: /home/nkodkani/ucc/build/install/lib/ucc/libucc_tl_rccl.so (libhsa-runtime64.so.1: cannot open shared object file: No such file or directory)
+[1750190108.050754] [gpu06:22378:0]   ucc_component.c:57   UCC  DEBUG failed to load UCC component library: /home/nkodkani/ucc/build/install/lib/ucc/libucc_mc_rocm.so (libamdhip64.so.6: cannot open shared object file: No such file or directory)
+[1750190108.051460] [gpu06:22380:0]   ucc_component.c:57   UCC  DEBUG failed to load UCC component library: /home/nkodkani/ucc/build/install/lib/ucc/libucc_mc_rocm.so (libamdhip64.so.6: cannot open shared object file: No such file or directory)
+[1750190108.052669] [gpu06:22378:0]   ucc_component.c:57   UCC  DEBUG failed to load UCC component library: /home/nkodkani/ucc/build/install/lib/ucc/libucc_ec_rocm.so (libamdhip64.so.6: cannot open shared object file: No such file or directory)
+[1750190108.053281] [gpu06:22380:0]   ucc_component.c:57   UCC  DEBUG failed to load UCC component library: /home/nkodkani/ucc/build/install/lib/ucc/libucc_ec_rocm.so (libamdhip64.so.6: cannot open shared object file: No such file or directory)
+[1750190108.053743] [gpu06:22378:0]   ucc_proc_info.c:311  UCC  DEBUG proc pid 22378, host gpu06, host_hash 3721812716735043095, sockid 0, numaid 0
+[1750190108.053752] [gpu06:22378:0] ucc_constructor.c:191  UCC  INFO  version: 1.5.0, loaded from: /home/nkodkani/ucc/build/install/lib/libucc.so.1, cfg file: n/a
+[1750190108.053767] [gpu06:22378:0]          ucc_mc.c:67   UCC  DEBUG mc cpu mc initialized
+[1750190108.053777] [gpu06:22378:0]         mc_cuda.c:65   cuda mc DEBUG driver version 12090
+[1750190108.053783] [gpu06:22378:0]          ucc_mc.c:67   UCC  DEBUG mc cuda mc initialized
+[1750190108.053801] [gpu06:22378:0]          ucc_ec.c:63   UCC  DEBUG ec cpu ec initialized
+[1750190108.054163] [gpu06:22380:0]   ucc_proc_info.c:311  UCC  DEBUG proc pid 22380, host gpu06, host_hash 3721812716735043095, sockid 0, numaid 0
+[1750190108.054171] [gpu06:22380:0] ucc_constructor.c:191  UCC  INFO  version: 1.5.0, loaded from: /home/nkodkani/ucc/build/install/lib/libucc.so.1, cfg file: n/a
+[1750190108.054189] [gpu06:22380:0]          ucc_mc.c:67   UCC  DEBUG mc cpu mc initialized
+[1750190108.054200] [gpu06:22380:0]         mc_cuda.c:65   cuda mc DEBUG driver version 12090
+[1750190108.054207] [gpu06:22380:0]          ucc_mc.c:67   UCC  DEBUG mc cuda mc initialized
+[1750190108.054217] [gpu06:22380:0]          ucc_ec.c:63   UCC  DEBUG ec cpu ec initialized
+[1750190108.055124] [gpu06:22378:0]          ucc_ec.c:63   UCC  DEBUG ec cuda ec initialized
+[1750190108.055143] [gpu06:22378:0]    cl_basic_lib.c:20   CL_BASIC DEBUG initialized lib object: 0x3c834d80
+[1750190108.055158] [gpu06:22378:0]         ucc_lib.c:152  UCC  DEBUG lib_prefix "UCC_": initialized component "basic" score 10
+[1750190108.055172] [gpu06:22378:0]     tl_cuda_lib.c:35   TL_CUDA DEBUG initialized lib object: 0x3cbf33a0
+[1750190108.055182] [gpu06:22378:0]     tl_self_lib.c:20   TL_SELF DEBUG initialized lib object: 0x3d0239e0
+[1750190108.055205] [gpu06:22378:0]      tl_ucp_lib.c:68   TL_UCP DEBUG initialized lib object: 0x3c08c390
+[1750190108.055705] [gpu06:22380:0]          ucc_ec.c:63   UCC  DEBUG ec cuda ec initialized
+[1750190108.055724] [gpu06:22380:0]    cl_basic_lib.c:20   CL_BASIC DEBUG initialized lib object: 0x3bc80f80
+[1750190108.055739] [gpu06:22380:0]         ucc_lib.c:152  UCC  DEBUG lib_prefix "UCC_": initialized component "basic" score 10
+[1750190108.055753] [gpu06:22380:0]     tl_cuda_lib.c:35   TL_CUDA DEBUG initialized lib object: 0x3c03f5b0
+[1750190108.055763] [gpu06:22380:0]     tl_self_lib.c:20   TL_SELF DEBUG initialized lib object: 0x3c46fbf0
+[1750190108.055786] [gpu06:22380:0]      tl_ucp_lib.c:68   TL_UCP DEBUG initialized lib object: 0x3b4d8390
+[1750190108.064470] [gpu06:22377:0]          parser.c:2363 UCX  WARN  unused environment variable: UCX_HOME
+[1750190108.064470] [gpu06:22377:0]          parser.c:2363 UCX  WARN  (set UCX_WARN_UNUSED_ENV_VARS=n to suppress this warning)
+[1750190108.064527] [gpu06:22377:0]  tl_ucp_context.c:320  TL_UCP DEBUG using EC for local copy
+[1750190108.064529] [gpu06:22377:0]  tl_ucp_context.c:337  TL_UCP DEBUG initialized tl context: 0x37278140
+[1750190108.064546] [gpu06:22377:0] cl_basic_context.c:50   CL_BASIC DEBUG initialized cl context: 0x38768fa0
+[UCC OOB] Rank 0: Performing Iallgather with msglen = 8
+[UCC OOB] Rank 0: sbuf = 0x381ecb70, rbuf = 0x38779810
+[UCC OOB] Rank 0 sbuf[0] = 33
+[UCC OOB] Rank 0 sbuf[1] = 2
+[UCC OOB] Rank 0 sbuf[2] = 0
+[UCC OOB] Rank 0 sbuf[3] = 0
+[UCC OOB] Rank 0 sbuf[4] = 0
+[UCC OOB] Rank 0 sbuf[5] = 0
+[UCC OOB] Rank 0 sbuf[6] = 0
+[UCC OOB] Rank 0 sbuf[7] = 0
+[UCC OOB] Rank 0 rbuf[0] = 32
+[UCC OOB] Rank 0 rbuf[1] = 251
+[UCC OOB] Rank 0 rbuf[2] = 255
+[UCC OOB] Rank 0 rbuf[3] = 47
+[UCC OOB] Rank 0 rbuf[4] = 238
+[UCC OOB] Rank 0 rbuf[5] = 127
+[UCC OOB] Rank 0 rbuf[6] = 0
+[UCC OOB] Rank 0 rbuf[7] = 0
+[UCC OOB] Rank 0: sendtype = MPIR_UINT8 (0x4c00083e), recvtype = MPIR_UINT8 (0x4c00083e)
+[DBG] Rank 0 sees comm->remote_size = 4, local_size = 4
+[1750190108.084160] [gpu06:22378:0] tl_cuda_context.c:71   TL_CUDA DEBUG initialized tl context: 0x3d023f80
+[1750190108.085387] [gpu06:22380:0] tl_cuda_context.c:71   TL_CUDA DEBUG initialized tl context: 0x3c470190
+[1750190108.149807] [gpu06:22378:0]          parser.c:2363 UCX  WARN  unused environment variable: UCX_HOME
+[1750190108.149807] [gpu06:22378:0]          parser.c:2363 UCX  WARN  (set UCX_WARN_UNUSED_ENV_VARS=n to suppress this warning)
+[1750190108.149861] [gpu06:22380:0]          parser.c:2363 UCX  WARN  unused environment variable: UCX_HOME
+[1750190108.149861] [gpu06:22380:0]          parser.c:2363 UCX  WARN  (set UCX_WARN_UNUSED_ENV_VARS=n to suppress this warning)
+[1750190108.149869] [gpu06:22378:0]  tl_ucp_context.c:320  TL_UCP DEBUG using EC for local copy
+[1750190108.149871] [gpu06:22378:0]  tl_ucp_context.c:337  TL_UCP DEBUG initialized tl context: 0x3c0b0140
+[1750190108.149888] [gpu06:22378:0] cl_basic_context.c:50   CL_BASIC DEBUG initialized cl context: 0x3d5a0860
+[1750190108.149901] [gpu06:22380:0]  tl_ucp_context.c:320  TL_UCP DEBUG using EC for local copy
+[1750190108.149904] [gpu06:22380:0]  tl_ucp_context.c:337  TL_UCP DEBUG initialized tl context: 0x3b4fc140
+[1750190108.149924] [gpu06:22380:0] cl_basic_context.c:50   CL_BASIC DEBUG initialized cl context: 0x3c9ecac0
+[UCC OOB] Rank 1: Performing Iallgather with msglen = 8
+[UCC OOB] Rank 1: sbuf = 0x3d023e80, rbuf = 0x3d5a0d40
+[UCC OOB] Rank 1 sbuf[0] = 33
+[UCC OOB] Rank 1 sbuf[1] = 2
+[UCC OOB] Rank 1 sbuf[2] = 0
+[UCC OOB] Rank 1 sbuf[3] = 0
+[UCC OOB] Rank 1 sbuf[4] = 0
+[UCC OOB] Rank 1 sbuf[5] = 0
+[UCC OOB] Rank 1 sbuf[6] = 0
+[UCC OOB] Rank 1 sbuf[7] = 0
+[UCC OOB] Rank 1 rbuf[0] = 32
+[UCC OOB] Rank 1 rbuf[1] = 251
+[UCC OOB] Rank 1 rbuf[2] = 223
+[UCC OOB] Rank 1 rbuf[3] = 245
+[UCC OOB] Rank 1 rbuf[4] = 238
+[UCC OOB] Rank 1 rbuf[5] = 127
+[UCC OOB] Rank 1 rbuf[6] = 0
+[UCC OOB] Rank 1 rbuf[7] = 0
+[UCC OOB] Rank 1: sendtype = MPIR_UINT8 (0x4c00083e), recvtype = MPIR_UINT8 (0x4c00083e)
+[DBG] Rank 1 sees comm->remote_size = 4, local_size = 4
+[UCC OOB] Rank 3: Performing Iallgather with msglen = 8
+[UCC OOB] Rank 3: sbuf = 0x3c470090, rbuf = 0x3c9fd010
+[UCC OOB] Rank 3 sbuf[0] = 33
+[UCC OOB] Rank 3 sbuf[1] = 2
+[UCC OOB] Rank 3 sbuf[2] = 0
+[UCC OOB] Rank 3 sbuf[3] = 0
+[UCC OOB] Rank 3 sbuf[4] = 0
+[UCC OOB] Rank 3 sbuf[5] = 0
+[UCC OOB] Rank 3 sbuf[6] = 0
+[UCC OOB] Rank 3 sbuf[7] = 0
+[UCC OOB] Rank 3 rbuf[0] = 48
+[UCC OOB] Rank 3 rbuf[1] = 1
+[UCC OOB] Rank 3 rbuf[2] = 0
+[UCC OOB] Rank 3 rbuf[3] = 12
+[UCC OOB] Rank 3 rbuf[4] = 190
+[UCC OOB] Rank 3 rbuf[5] = 127
+[UCC OOB] Rank 3 rbuf[6] = 0
+[UCC OOB] Rank 3 rbuf[7] = 0
+[UCC OOB] Rank 3: sendtype = MPIR_UINT8 (0x4c00083e), recvtype = MPIR_UINT8 (0x4c00083e)
+[DBG] Rank 3 sees comm->remote_size = 4, local_size = 4
+[UCC OOB] Rank 0: Performing Iallgather with msglen = 545
+[UCC OOB] Rank 0: sbuf = 0x38343894, rbuf = 0x38343010
+[UCC OOB] Rank 0 sbuf[0] = 23
+[UCC OOB] Rank 0 sbuf[1] = 22
+[UCC OOB] Rank 0 sbuf[2] = 134
+[UCC OOB] Rank 0 sbuf[3] = 101
+[UCC OOB] Rank 0 sbuf[4] = 242
+[UCC OOB] Rank 0 sbuf[5] = 136
+[UCC OOB] Rank 0 sbuf[6] = 166
+[UCC OOB] Rank 0 sbuf[7] = 51
+[UCC OOB] Rank 0 rbuf[0] = 33
+[UCC OOB] Rank 0 rbuf[1] = 2
+[UCC OOB] Rank 0 rbuf[2] = 0
+[UCC OOB] Rank 0 rbuf[3] = 0
+[UCC OOB] Rank 0 rbuf[4] = 0
+[UCC OOB] Rank 0 rbuf[5] = 0
+[UCC OOB] Rank 0 rbuf[6] = 0
+[UCC OOB] Rank 0 rbuf[7] = 0
+[UCC OOB] Rank 0: sendtype = MPIR_UINT8 (0x4c00083e), recvtype = MPIR_UINT8 (0x4c00083e)
+[DBG] Rank 0 sees comm->remote_size = 4, local_size = 4
+[UCC OOB] Rank 1: Performing Iallgather with msglen = 545
+[UCC OOB] Rank 1: sbuf = 0x3d5b1894, rbuf = 0x3d5b1010
+[UCC OOB] Rank 1 sbuf[0] = 23
+[UCC OOB] Rank 1 sbuf[1] = 22
+[UCC OOB] Rank 1 sbuf[2] = 134
+[UCC OOB] Rank 1 sbuf[3] = 101
+[UCC OOB] Rank 1 sbuf[4] = 242
+[UCC OOB] Rank 1 sbuf[5] = 136
+[UCC OOB] Rank 1 sbuf[6] = 166
+[UCC OOB] Rank 1 sbuf[7] = 51
+[UCC OOB] Rank 1 rbuf[0] = 33
+[UCC OOB] Rank 1 rbuf[1] = 2
+[UCC OOB] Rank 1 rbuf[2] = 0
+[UCC OOB] Rank 1 rbuf[3] = 0
+[UCC OOB] Rank 1 rbuf[4] = 0
+[UCC OOB] Rank 1 rbuf[5] = 0
+[UCC OOB] Rank 1 rbuf[6] = 0
+[UCC OOB] Rank 1 rbuf[7] = 0
+[UCC OOB] Rank 1: sendtype = MPIR_UINT8 (0x4c00083e), recvtype = MPIR_UINT8 (0x4c00083e)
+[DBG] Rank 1 sees comm->remote_size = 4, local_size = 4
+[UCC OOB] Rank 2: Performing Iallgather with msglen = 545
+[UCC OOB] Rank 2: sbuf = 0x1c5b0894, rbuf = 0x1c5b0010
+[UCC OOB] Rank 2 sbuf[0] = 23
+[UCC OOB] Rank 2 sbuf[1] = 22
+[UCC OOB] Rank 2 sbuf[2] = 134
+[UCC OOB] Rank 2 sbuf[3] = 101
+[UCC OOB] Rank 2 sbuf[4] = 242
+[UCC OOB] Rank 2 sbuf[5] = 136
+[UCC OOB] Rank 2 sbuf[6] = 166
+[UCC OOB] Rank 2 sbuf[7] = 51
+[UCC OOB] Rank 2 rbuf[0] = 33
+[UCC OOB] Rank 2 rbuf[1] = 2
+[UCC OOB] Rank 2 rbuf[2] = 0
+[UCC OOB] Rank 2 rbuf[3] = 0
+[UCC OOB] Rank 2 rbuf[4] = 0
+[UCC OOB] Rank 2 rbuf[5] = 0
+[UCC OOB] Rank 2 rbuf[6] = 0
+[UCC OOB] Rank 2 rbuf[7] = 0
+[UCC OOB] Rank 2: sendtype = MPIR_UINT8 (0x4c00083e), recvtype = MPIR_UINT8 (0x4c00083e)
+[DBG] Rank 2 sees comm->remote_size = 4, local_size = 4
+[UCC OOB] Rank 3: Performing Iallgather with msglen = 545
+[UCC OOB] Rank 3: sbuf = 0x3c5c5894, rbuf = 0x3c5c5010
+[UCC OOB] Rank 3 sbuf[0] = 23
+[UCC OOB] Rank 3 sbuf[1] = 22
+[UCC OOB] Rank 3 sbuf[2] = 134
+[UCC OOB] Rank 3 sbuf[3] = 101
+[UCC OOB] Rank 3 sbuf[4] = 242
+[UCC OOB] Rank 3 sbuf[5] = 136
+[UCC OOB] Rank 3 sbuf[6] = 166
+[UCC OOB] Rank 3 sbuf[7] = 51
+[UCC OOB] Rank 3 rbuf[0] = 33
+[UCC OOB] Rank 3 rbuf[1] = 2
+[UCC OOB] Rank 3 rbuf[2] = 0
+[UCC OOB] Rank 3 rbuf[3] = 0
+[UCC OOB] Rank 3 rbuf[4] = 0
+[UCC OOB] Rank 3 rbuf[5] = 0
+[UCC OOB] Rank 3 rbuf[6] = 0
+[UCC OOB] Rank 3 rbuf[7] = 0
+[UCC OOB] Rank 3: sendtype = MPIR_UINT8 (0x4c00083e), recvtype = MPIR_UINT8 (0x4c00083e)
+[DBG] Rank 3 sees comm->remote_size = 4, local_size = 4
+[1750190108.150144] [gpu06:22377:0]     tl_ucp_team.c:115  TL_UCP DEBUG posted tl team: 0x38779840
+[1750190108.150148] [gpu06:22377:0]     tl_ucp_team.c:214  TL_UCP DEBUG initialized tl team: 0x38779840
+[1750190108.150150] [gpu06:22377:0]     ucc_context.c:843  UCC  DEBUG created ucc context 0x381ecb00 for lib UCC_
+[1750190108.150140] [gpu06:22378:0]     tl_ucp_team.c:115  TL_UCP DEBUG posted tl team: 0x3d5b1ac0
+[1750190108.150144] [gpu06:22378:0]     tl_ucp_team.c:214  TL_UCP DEBUG initialized tl team: 0x3d5b1ac0
+[1750190108.150145] [gpu06:22378:0]     ucc_context.c:843  UCC  DEBUG created ucc context 0x3d023e10 for lib UCC_
+WE MADE IT PAST INIT lets go
+[1750190108.150145] [gpu06:22379:0]     tl_ucp_team.c:115  TL_UCP DEBUG posted tl team: 0x1c9e84b0
+[1750190108.150150] [gpu06:22379:0]     tl_ucp_team.c:214  TL_UCP DEBUG initialized tl team: 0x1c9e84b0
+[1750190108.150153] [gpu06:22379:0]     ucc_context.c:843  UCC  DEBUG created ucc context 0x1c45ae60 for lib UCC_
+WE MADE IT PAST INIT lets go
+[UCC OOB] Rank 1: Performing Iallgather with msglen = 4
+[UCC OOB] Rank 1: sbuf = 0x3d023f48, rbuf = 0x3d023d90
+[UCC OOB] Rank 1 sbuf[0] = 1
+[UCC OOB] Rank 1 sbuf[1] = 0
+[UCC OOB] Rank 1 sbuf[2] = 0
+[UCC OOB] Rank 1 sbuf[3] = 0
+[UCC OOB] Rank 1 rbuf[0] = 115
+WE MADE IT PAST INIT lets go
+[1750190108.150152] [gpu06:22380:0]     tl_ucp_team.c:115  TL_UCP DEBUG posted tl team: 0x3c9fd040
+[1750190108.150155] [gpu06:22380:0]     tl_ucp_team.c:214  TL_UCP DEBUG initialized tl team: 0x3c9fd040
+[1750190108.150158] [gpu06:22380:0]     ucc_context.c:843  UCC  DEBUG created ucc context 0x3c470020 for lib UCC_
+WE MADE IT PAST INIT lets go
+[UCC OOB] Rank 0: Performing Iallgather with msglen = 4
+[UCC OOB] Rank 0: sbuf = 0x381ecc38, rbuf = 0x381eca80
+[UCC OOB] Rank 0 sbuf[0] = 0
+[UCC OOB] Rank 0 sbuf[1] = 0
+[UCC OOB] Rank 0 sbuf[2] = 0
+[UCC OOB] Rank 0 sbuf[3] = 0
+[UCC OOB] Rank 0 rbuf[0] = 172
+[UCC OOB] Rank 0 rbuf[1] = 75
+[UCC OOB] Rank 0 rbuf[2] = 29
+[UCC OOB] Rank 0 rbuf[3] = 56
+[UCC OOB] Rank 0: sendtype = MPIR_UINT8 (0x4c00083e), recvtype = MPIR_UINT8 (0x4c00083e)
+[DBG] Rank 0 sees comm->remote_size = 4, local_size = 4
+[UCC OOB] Rank 1 rbuf[1] = 237
+[UCC OOB] Rank 1 rbuf[2] = 1
+[UCC OOB] Rank 1 rbuf[3] = 61
+[UCC OOB] Rank 1: sendtype = MPIR_UINT8 (0x4c00083e), recvtype = MPIR_UINT8 (0x4c00083e)
+[DBG] Rank 1 sees comm->remote_size = 4, local_size = 4
+[UCC OOB] Rank 2: Performing Iallgather with msglen = 4
+[UCC OOB] Rank 2: sbuf = 0x1c45af98, rbuf = 0x1c45ade0
+[UCC OOB] Rank 2 sbuf[0] = 2
+[UCC OOB] Rank 2 sbuf[1] = 0
+[UCC OOB] Rank 2 sbuf[2] = 0
+[UCC OOB] Rank 2 sbuf[3] = 0
+[UCC OOB] Rank 2 rbuf[0] = 250
+[UCC OOB] Rank 2 rbuf[1] = 105
+[UCC OOB] Rank 2 rbuf[2] = 68
+[UCC OOB] Rank 2 rbuf[3] = 28
+[UCC OOB] Rank 2: sendtype = MPIR_UINT8 (0x4c00083e), recvtype = MPIR_UINT8 (0x4c00083e)
+[DBG] Rank 2 sees comm->remote_size = 4, local_size = 4
+[UCC OOB] Rank 3: Performing Iallgather with msglen = 4
+[UCC OOB] Rank 3: sbuf = 0x3c470158, rbuf = 0x3c46ffa0
+[UCC OOB] Rank 3 sbuf[0] = 3
+[UCC OOB] Rank 3 sbuf[1] = 0
+[UCC OOB] Rank 3 sbuf[2] = 0
+[UCC OOB] Rank 3 sbuf[3] = 0
+[UCC OOB] Rank 3 rbuf[0] = 15
+[UCC OOB] Rank 3 rbuf[1] = 59
+[UCC OOB] Rank 3 rbuf[2] = 69
+[UCC OOB] Rank 3 rbuf[3] = 60
+[UCC OOB] Rank 3: sendtype = MPIR_UINT8 (0x4c00083e), recvtype = MPIR_UINT8 (0x4c00083e)
+[DBG] Rank 3 sees comm->remote_size = 4, local_size = 4
+[1750190108.150218] [gpu06:22378:0]        ucc_team.c:370  UCC  DEBUG team 0x3d179150 rank 1, ctx_rank 1, map_type 1
+[1750190108.150214] [gpu06:22380:0]        ucc_team.c:370  UCC  DEBUG team 0x3c5c5b30 rank 3, ctx_rank 3, map_type 1
+[1750190108.150219] [gpu06:22377:0]        ucc_team.c:370  UCC  DEBUG team 0x38343c00 rank 0, ctx_rank 0, map_type 1
+[1750190108.150224] [gpu06:22379:0]        ucc_team.c:370  UCC  DEBUG team 0x1c5b0ac0 rank 2, ctx_rank 2, map_type 1
+[1750190108.236966] [gpu06:22380:0]        ucc_team.c:638  UCC  DEBUG allocated ID 1 for team 0x3c5c5b30
+[1750190108.237511] [gpu06:22379:0]        ucc_team.c:638  UCC  DEBUG allocated ID 1 for team 0x1c5b0ac0
+[1750190108.238090] [gpu06:22380:0]    tl_cuda_team.c:115  TL_CUDA DEBUG posted tl team: 0x3cbdf830
+[1750190108.238097] [gpu06:22380:0]   cl_basic_team.c:52   CL_BASIC DEBUG posted cl team: 0x3b4fc290
+[1750190108.238154] [gpu06:22379:0]    tl_cuda_team.c:115  TL_CUDA DEBUG posted tl team: 0x1cbcaf40
+[1750190108.238160] [gpu06:22379:0]   cl_basic_team.c:52   CL_BASIC DEBUG posted cl team: 0x1b4e7290
+[1750190108.241208] [gpu06:22377:0]        ucc_team.c:638  UCC  DEBUG allocated ID 1 for team 0x38343c00
+[1750190108.241254] [gpu06:22378:0]        ucc_team.c:638  UCC  DEBUG allocated ID 1 for team 0x3d179150
+[1750190108.241929] [gpu06:22377:0]    tl_cuda_team.c:115  TL_CUDA DEBUG posted tl team: 0x3895b470
+[1750190108.241934] [gpu06:22377:0]   cl_basic_team.c:52   CL_BASIC DEBUG posted cl team: 0x37278290
+[1750190108.241948] [gpu06:22378:0]    tl_cuda_team.c:115  TL_CUDA DEBUG posted tl team: 0x3d782830
+[1750190108.241952] [gpu06:22378:0]   cl_basic_team.c:52   CL_BASIC DEBUG posted cl team: 0x3c0b0290
+[1750190108.242165] [gpu06:22377:0]   tl_cuda_cache.c:277  UCC  DEBUG ipc-cache: tl_cuda cache new region:0x3895bb50 [0x7feea4000000..0x7feea6000000] size:33554432
+[1750190108.242174] [gpu06:22379:0]   tl_cuda_cache.c:277  UCC  DEBUG ipc-cache: tl_cuda cache new region:0x1c44fbe0 [0x7fedde000000..0x7fede0000000] size:33554432
+[1750190108.242193] [gpu06:22378:0]   tl_cuda_cache.c:277  UCC  DEBUG ipc-cache: tl_cuda cache new region:0x3d782cc0 [0x7fedde000000..0x7fede0000000] size:33554432
+[1750190108.242184] [gpu06:22380:0]   tl_cuda_cache.c:277  UCC  DEBUG ipc-cache: tl_cuda cache new region:0x3cbcde30 [0x7fedde000000..0x7fede0000000] size:33554432
+[1750190108.242352] [gpu06:22377:0]   tl_cuda_cache.c:277  UCC  DEBUG ipc-cache: tl_cuda cache new region:0x381a3330 [0x7f4fb0000000..0x7f4fb2000000] size:33554432
+[1750190108.242362] [gpu06:22379:0]   tl_cuda_cache.c:277  UCC  DEBUG ipc-cache: tl_cuda cache new region:0x1c410aa0 [0x7feea4000000..0x7feea6000000] size:33554432
+[1750190108.242379] [gpu06:22378:0]   tl_cuda_cache.c:277  UCC  DEBUG ipc-cache: tl_cuda cache new region:0x3cfda080 [0x7f4fb0000000..0x7f4fb2000000] size:33554432
+[1750190108.242371] [gpu06:22380:0]   tl_cuda_cache.c:277  UCC  DEBUG ipc-cache: tl_cuda cache new region:0x3c426c90 [0x7feea4000000..0x7feea6000000] size:33554432
+[1750190108.242532] [gpu06:22377:0]   tl_cuda_cache.c:277  UCC  DEBUG ipc-cache: tl_cuda cache new region:0x381a41c0 [0x7fbdba000000..0x7fbdbc000000] size:33554432
+[1750190108.242542] [gpu06:22377:0] tl_cuda_team_topo.c:445  TL_CUDA DEBUG dev 0000:43:00.0 (0) to dev 0000:43:00.0 (0): same device
+[1750190108.242545] [gpu06:22377:0] tl_cuda_team_topo.c:445  TL_CUDA DEBUG dev 0000:43:00.0 (0) to dev 0000:43:00.0 (1): same device
+[1750190108.242547] [gpu06:22377:0] tl_cuda_team_topo.c:445  TL_CUDA DEBUG dev 0000:43:00.0 (0) to dev 0000:43:00.0 (2): same device
+[1750190108.242549] [gpu06:22377:0] tl_cuda_team_topo.c:445  TL_CUDA DEBUG dev 0000:43:00.0 (0) to dev 0000:43:00.0 (3): same device
+[1750190108.242540] [gpu06:22379:0]   tl_cuda_cache.c:277  UCC  DEBUG ipc-cache: tl_cuda cache new region:0x1c411930 [0x7fbdba000000..0x7fbdbc000000] size:33554432
+[1750190108.242550] [gpu06:22379:0] tl_cuda_team_topo.c:445  TL_CUDA DEBUG dev 0000:43:00.0 (2) to dev 0000:43:00.0 (0): same device
+[1750190108.242553] [gpu06:22379:0] tl_cuda_team_topo.c:445  TL_CUDA DEBUG dev 0000:43:00.0 (2) to dev 0000:43:00.0 (1): same device
+[1750190108.242555] [gpu06:22379:0] tl_cuda_team_topo.c:445  TL_CUDA DEBUG dev 0000:43:00.0 (2) to dev 0000:43:00.0 (2): same device
+[1750190108.242552] [gpu06:22377:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 0: 0 send to 1
+[1750190108.242553] [gpu06:22377:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 1: 0 send to 1
+[1750190108.242554] [gpu06:22377:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 2: 0 send to 1
+[1750190108.242556] [gpu06:22377:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 3: 0 send to 1
+[1750190108.242558] [gpu06:22377:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 4: 0 send to 3
+[1750190108.242560] [gpu06:22377:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 5: 0 send to 3
+[1750190108.242557] [gpu06:22378:0]   tl_cuda_cache.c:277  UCC  DEBUG ipc-cache: tl_cuda cache new region:0x3cfdaf10 [0x7fbdba000000..0x7fbdbc000000] size:33554432
+[1750190108.242557] [gpu06:22379:0] tl_cuda_team_topo.c:445  TL_CUDA DEBUG dev 0000:43:00.0 (2) to dev 0000:43:00.0 (3): same device
+[1750190108.242560] [gpu06:22379:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 0: 2 send to 3
+[1750190108.242561] [gpu06:22379:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 1: 2 send to 3
+[1750190108.242563] [gpu06:22379:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 2: 2 send to 3
+[1750190108.242549] [gpu06:22380:0]   tl_cuda_cache.c:277  UCC  DEBUG ipc-cache: tl_cuda cache new region:0x3c427b40 [0x7f4fb0000000..0x7f4fb2000000] size:33554432
+[1750190108.242559] [gpu06:22380:0] tl_cuda_team_topo.c:445  TL_CUDA DEBUG dev 0000:43:00.0 (3) to dev 0000:43:00.0 (0): same device
+[1750190108.242562] [gpu06:22380:0] tl_cuda_team_topo.c:445  TL_CUDA DEBUG dev 0000:43:00.0 (3) to dev 0000:43:00.0 (1): same device
+[1750190108.242564] [gpu06:22380:0] tl_cuda_team_topo.c:445  TL_CUDA DEBUG dev 0000:43:00.0 (3) to dev 0000:43:00.0 (2): same device
+[1750190108.242566] [gpu06:22380:0] tl_cuda_team_topo.c:445  TL_CUDA DEBUG dev 0000:43:00.0 (3) to dev 0000:43:00.0 (3): same de[1750190108.242562] [gpu06:22377:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 6: 0 send to 3
+[1750190108.242563] [gpu06:22377:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 7: 0 send to 3
+[1750190108.242565] [gpu06:22377:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 8: 0 send to 1
+[1750190108.242567] [gpu06:22377:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 9: 0 send to 1
+[1750190108.242569] [gpu06:22377:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 10: 0 send to 3
+[1750190108.242564] [gpu06:22379:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 3: 2 send to 3
+[1750190108.242566] [gpu06:22379:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 4: 2 send to 1
+[1750190108.242568] [gpu06:22379:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 5: 2 send to 1
+[1750190108.242569] [gpu06:22379:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 6: 2 send to 1
+[1750190108.242571] [gpu06:22379:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 7: 2 send to 1
+vice
+[1750190108.242569] [gpu06:22380:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 0: 3 send to 0
+[1750190108.242571] [gpu06:22380:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 1: 3 send to 0
+[1750190108.242572] [gpu06:22380:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 2: 3 send to 0
+[1750190108.242570] [gpu06:22377:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 11: 0 send to 3
+[1750190108.242572] [gpu06:22377:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 12: 0 send to 1
+[1750190108.242574] [gpu06:22377:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 13: 0 send to 3
+[1750190108.242572] [gpu06:22378:0] tl_cuda_team_topo.c:445  TL_CUDA DEBUG dev 0000:43:00.0 (1) to dev 0000:43:00.0 (0): same device
+[1750190108.242575] [gpu06:22378:0] tl_cuda_team_topo.c:445  TL_CUDA DEBUG dev 0000:43:00.0 (1) to dev 0000:43:00.0 (1): same device
+[1750190108.242572] [gpu06:22379:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 8: 2 send to 3
+[1750190108.242574] [gpu06:22379:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 9: 2 send to 3
+[1750190108.242575] [gpu06:22379:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 10: 2 send to 1
+[1750190108.242577] [gpu06:22379:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 11: 2 send to 1
+[1750190108.242578] [gpu06:22379:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 12: 2 send to 3
+[1750190108.242574] [gpu06:22380:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 3: 3 send to 0
+[1750190108.242575] [gpu06:22380:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 4: 3 send to 2
+[1750190108.242577] [gpu06:22380:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 5: 3 send to 2
+[1750190108.242578] [gpu06:22380:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 6: 3 send to 2
+[1750190108.242580] [gpu06:22380:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 7: 3 send to 2
+[1750190108.242578] [gpu06:22378:0] tl_cuda_team_topo.c:445  TL_CUDA DEBUG dev 0000:43:00.0 (1) to dev 0000:43:00.0 (2): same device
+[1750190108.242580] [gpu06:22378:0] tl_cuda_team_topo.c:445  TL_CUDA DEBUG dev 0000:43:00.0 (1) to dev 0000:43:00.0 (3): same device
+[1750190108.242583] [gpu06:22378:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 0: 1 send to 2
+[1750190108.242579] [gpu06:22379:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 13: 2 send to 1
+[1750190108.242581] [gpu06:22380:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 8: 3 send to 0
+[1750190108.242583] [gpu06:22380:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 9: 3 send to 0
+[1750190108.242585] [gpu06:22380:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 10: 3 send to 2
+[1750190108.242586] [gpu06:22380:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 11: 3 send to 2
+[1750190108.242587] [gpu06:22380:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 12: 3 send to 0
+[1750190108.242584] [gpu06:22378:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 1: 1 send to 2
+[1750190108.242587] [gpu06:22378:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 2: 1 send to 2
+[1750190108.242588] [gpu06:22378:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 3: 1 send to 2
+[1750190108.242589] [gpu06:22378:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 4: 1 send to 0
+[1750190108.242590] [gpu06:22378:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 5: 1 send to 0
+[1750190108.242588] [gpu06:22380:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 13: 3 send to 2
+[1750190108.242592] [gpu06:22378:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 6: 1 send to 0
+[1750190108.242594] [gpu06:22378:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 7: 1 send to 0
+[1750190108.242595] [gpu06:22378:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 8: 1 send to 2
+[1750190108.242597] [gpu06:22378:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 9: 1 send to 2
+[1750190108.242598] [gpu06:22378:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 10: 1 send to 0
+[1750190108.242600] [gpu06:22378:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 11: 1 send to 0
+[1750190108.242601] [gpu06:22378:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 12: 1 send to 2
+[1750190108.242603] [gpu06:22378:0] tl_cuda_team_topo.c:483  TL_CUDA DEBUG ring 13: 1 send to 0
+[1750190108.243445] [gpu06:22379:0]    tl_cuda_team.c:330  TL_CUDA DEBUG initialized tl team: 0x1cbcaf40
+[1750190108.243456] [gpu06:22379:0]          ucc_tl.c:299  TL_SELF DEBUG team size 4 is too big, max supported 1
+[1750190108.243471] [gpu06:22379:0]     tl_ucp_team.c:112  TL_UCP DEBUG opt knomial radix: general 4 host 2
+[1750190108.243473] [gpu06:22379:0]     tl_ucp_team.c:115  TL_UCP DEBUG posted tl team: 0x1cd0fd10
+[1750190108.243475] [gpu06:22379:0]     tl_ucp_team.c:214  TL_UCP DEBUG initialized tl team: 0x1cd0fd10
+[1750190108.243477] [gpu06:22379:0]   cl_basic_team.c:122  CL_BASIC DEBUG initialized tl cuda team
+[1750190108.243478] [gpu06:22379:0]   cl_basic_team.c:126  CL_BASIC DEBUG failed to create tl self team: (-1)
+[1750190108.243480] [gpu06:22379:0]   cl_basic_team.c:122  CL_BASIC DEBUG initialized tl ucp team
+[1750190108.243484] [gpu06:22380:0]    tl_cuda_team.c:330  TL_CUDA DEBUG initialized tl team: 0x3cbdf830
+[1750190108.243494] [gpu06:22380:0]          ucc_tl.c:299  TL_SELF DEBUG team size 4 is too big, max supported 1
+[1750190108.243508] [gpu06:22380:0]     tl_ucp_team.c:112  TL_UCP DEBUG opt knomial radix: general 4 host 2
+[1750190108.243512] [gpu06:22380:0]     tl_ucp_team.c:115  TL_UCP DEBUG posted tl team: 0x3cd245a0
+[1750190108.243514] [gpu06:22380:0]     tl_ucp_team.c:214  TL_UCP DEBUG initialized tl team: 0x3cd245a0
+[1750190108.243515] [gpu06:22380:0]   cl_basic_team.c:122  CL_BASIC DEBUG initialized tl cuda team
+[1750190108.243517] [gpu06:22379:0]     tl_ucp_team.c:244  TL_UCP DEBUG enable support for memory type host
+[1750190108.243519] [gpu06:22379:0]     tl_ucp_team.c:244  TL_UCP DEBUG enable support for memory type cuda
+[1750190108.243521] [gpu06:22379:0]     tl_ucp_team.c:244  TL_UCP DEBUG enable support for memory type cuda-managed
+[1750190108.243517] [gpu06:22380:0]   cl_basic_team.c:126  CL_BASIC DEBUG failed to create tl self team: (-1)
+[1750190108.243518] [gpu06:22380:0]   cl_basic_team.c:122  CL_BASIC DEBUG initialized tl ucp team
+[1750190108.243541] [gpu06:22377:0]    tl_cuda_team.c:330  TL_CUDA DEBUG initialized tl team: 0x3895b470
+[1750190108.243554] [gpu06:22377:0]          ucc_tl.c:299  TL_SELF DEBUG team size 4 is too big, max supported 1
+[1750190108.243543] [gpu06:22378:0]    tl_cuda_team.c:330  TL_CUDA DEBUG initialized tl team: 0x3d782830
+[1750190108.243553] [gpu06:22378:0]          ucc_tl.c:299  TL_SELF DEBUG team size 4 is too big, max supported 1
+[1750190108.243569] [gpu06:22378:0]     tl_ucp_team.c:112  TL_UCP DEBUG opt knomial radix: general 4 host 2
+[1750190108.243570] [gpu06:22378:0]     tl_ucp_team.c:115  TL_UCP DEBUG posted tl team: 0x3d799640
+[1750190108.243572] [gpu06:22378:0]     tl_ucp_team.c:214  TL_UCP DEBUG initialized tl team: 0x3d799640
+[1750190108.243549] [gpu06:22380:0]     tl_ucp_team.c:244  TL_UCP DEBUG enable support for memory type host
+[1750190108.243551] [gpu06:22380:0]     tl_ucp_team.c:244  TL_UCP DEBUG enable support for memory type cuda
+[1750190108.243552] [gpu06:22380:0]     tl_ucp_team.c:244  TL_UCP DEBUG enable support for memory type cuda-managed
+[1750190108.243569] [gpu06:22377:0]     tl_ucp_team.c:112  TL_UCP DEBUG opt knomial radix: general 4 host 2
+[1750190108.243570] [gpu06:22377:0]     tl_ucp_team.c:115  TL_UCP DEBUG posted tl team: 0x38aa0a20
+[1750190108.243572] [gpu06:22377:0]     tl_ucp_team.c:214  TL_UCP DEBUG initialized tl team: 0x38aa0a20
+[1750190108.243574] [gpu06:22377:0]   cl_basic_team.c:122  CL_BASIC DEBUG initialized tl cuda team
+[1750190108.243576] [gpu06:22377:0]   cl_basic_team.c:126  CL_BASIC DEBUG failed to create tl self team: (-1)
+[1750190108.243577] [gpu06:22377:0]   cl_basic_team.c:122  CL_BASIC DEBUG initialized tl ucp team
+[1750190108.243574] [gpu06:22378:0]   cl_basic_team.c:122  CL_BASIC DEBUG initialized tl cuda team
+[1750190108.243576] [gpu06:22378:0]   cl_basic_team.c:126  CL_BASIC DEBUG failed to create tl self team: (-1)
+[1750190108.243577] [gpu06:22378:0]   cl_basic_team.c:122  CL_BASIC DEBUG initialized tl ucp team
+[1750190108.243607] [gpu06:22378:0]     tl_ucp_team.c:244  TL_UCP DEBUG enable support for memory type host
+[1750190108.243610] [gpu06:22378:0]     tl_ucp_team.c:244  TL_UCP DEBUG enable support for memory type cuda
+[1750190108.243612] [gpu06:22378:0]     tl_ucp_team.c:244  TL_UCP DEBUG enable support for memory type cuda-managed
+[1750190108.243614] [gpu06:22377:0]     tl_ucp_team.c:244  TL_UCP DEBUG enable support for memory type host
+[1750190108.243616] [gpu06:22377:0]     tl_ucp_team.c:244  TL_UCP DEBUG enable support for memory type cuda
+[1750190108.243618] [gpu06:22377:0]     tl_ucp_team.c:244  TL_UCP DEBUG enable support for memory type cuda-managed
+[1750190108.243730] [gpu06:22377:0]        ucc_team.c:472  UCC  INFO  ===== COLL_SCORE_MAP (team_id 1, size 4) =====
+[1750190108.243756] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  Allgather:
+[1750190108.243756] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Host: {0..4095}:TL_UCP:10=ucc_tl_ucp_allgather_knomial_init {4K..inf}:TL_UCP:10=ucc_tl_ucp_allgather_neighbor_init 
+[1750190108.243756] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Cuda: {0..4095}:TL_CUDA:10=ucc_tl_cuda_allgather_init {4K..inf}:TL_CUDA:10=ucc_tl_cuda_allgather_init 
+[1750190108.243756] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	CudaManaged: {0..4095}:TL_UCP:10=ucc_tl_ucp_allgather_knomial_init {4K..inf}:TL_UCP:10=ucc_tl_ucp_allgather_neighbor_init 
+[1750190108.243774] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  Allgatherv:
+[1750190108.243774] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Host: {0..inf}:TL_UCP:10=ucc_tl_ucp_allgatherv_ring_init 
+[1750190108.243774] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Cuda: {0..inf}:TL_CUDA:10=ucc_tl_cuda_allgatherv_init 
+[1750190108.243774] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	CudaManaged: {0..inf}:TL_UCP:10=ucc_tl_ucp_allgatherv_ring_init 
+[1750190108.243797] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  Allreduce:
+[1750190108.243797] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Host: {0..4095}:TL_UCP:10=ucc_tl_ucp_allreduce_knomial_init {4K..inf}:TL_UCP:10=ucc_tl_ucp_allreduce_sra_knomial_init 
+[1750190108.243797] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Cuda: {0..4095}:TL_UCP:10=ucc_tl_ucp_allreduce_knomial_init {4K..inf}:TL_UCP:10=ucc_tl_ucp_allreduce_sra_knomial_init 
+[1750190108.243797] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	CudaManaged: {0..4095}:TL_UCP:10=ucc_tl_ucp_allreduce_knomial_init {4K..inf}:TL_UCP:10=ucc_tl_ucp_allreduce_sra_knomial_init 
+[1750190108.243816] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  Alltoall:
+[1750190108.243816] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Host: {0..515}:TL_UCP:10=ucc_tl_ucp_alltoall_bruck_init {516..inf}:TL_UCP:10=ucc_tl_ucp_coll_init 
+[1750190108.243816] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Cuda: {0..inf}:TL_CUDA:10=ucc_tl_cuda_coll_init 
+[1750190108.243816] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	CudaManaged: {0..inf}:TL_UCP:10=ucc_tl_ucp_coll_init 
+[1750190108.243827] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  Alltoallv:
+[1750190108.243827] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Host: {0..inf}:TL_UCP:10=ucc_tl_ucp_coll_init 
+[1750190108.243827] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Cuda: {0..inf}:TL_CUDA:10=ucc_tl_cuda_coll_init 
+[1750190108.243827] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	CudaManaged: {0..inf}:TL_UCP:10=ucc_tl_ucp_coll_init 
+[1750190108.243841] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  Barrier:
+[1750190108.243841] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Host: {0..inf}:TL_UCP:10=ucc_tl_ucp_coll_init 
+[1750190108.243841] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Cuda: {0..inf}:TL_UCP:10=ucc_tl_ucp_coll_init 
+[1750190108.243841] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	CudaManaged: {0..inf}:TL_UCP:10=ucc_tl_ucp_coll_init 
+[1750190108.243862] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  Bcast:
+[1750190108.243862] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Host: {0..32767}:TL_UCP:10=ucc_tl_ucp_bcast_knomial_init {32K..inf}:TL_UCP:10=ucc_tl_ucp_bcast_sag_knomial_init 
+[1750190108.243862] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Cuda: {0..32767}:TL_CUDA:10=ucc_tl_cuda_bcast_linear_init {32K..inf}:TL_CUDA:10=ucc_tl_cuda_bcast_linear_init 
+[1750190108.243862] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	CudaManaged: {0..32767}:TL_UCP:10=ucc_tl_ucp_bcast_knomial_init {32K..inf}:TL_UCP:10=ucc_tl_ucp_bcast_sag_knomial_init 
+[1750190108.243876] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  Fanin:
+[1750190108.243876] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Host: {0..inf}:TL_UCP:10=ucc_tl_ucp_coll_init 
+[1750190108.243876] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Cuda: {0..inf}:TL_UCP:10=ucc_tl_ucp_coll_init 
+[1750190108.243876] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	CudaManaged: {0..inf}:TL_UCP:10=ucc_tl_ucp_coll_init 
+[1750190108.243888] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  Fanout:
+[1750190108.243888] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Host: {0..inf}:TL_UCP:10=ucc_tl_ucp_coll_init 
+[1750190108.243888] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Cuda: {0..inf}:TL_UCP:10=ucc_tl_ucp_coll_init 
+[1750190108.243888] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	CudaManaged: {0..inf}:TL_UCP:10=ucc_tl_ucp_coll_init 
+[1750190108.243901] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  Gather:
+[1750190108.243901] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Host: {0..inf}:TL_UCP:10=ucc_tl_ucp_coll_init 
+[1750190108.243901] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Cuda: {0..inf}:TL_UCP:10=ucc_tl_ucp_coll_init 
+[1750190108.243901] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	CudaManaged: {0..inf}:TL_UCP:10=ucc_tl_ucp_coll_init 
+[1750190108.243914] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  Gatherv:
+[1750190108.243914] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Host: {0..inf}:TL_UCP:10=ucc_tl_ucp_coll_init 
+[1750190108.243914] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Cuda: {0..inf}:TL_UCP:10=ucc_tl_ucp_coll_init 
+[1750190108.243914] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	CudaManaged: {0..inf}:TL_UCP:10=ucc_tl_ucp_coll_init 
+[1750190108.243934] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  Reduce:
+[1750190108.243934] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Host: {0..32767}:TL_UCP:10=ucc_tl_ucp_reduce_knomial_init {32K..inf}:TL_UCP:10=ucc_tl_ucp_reduce_srg_knomial_init 
+[1750190108.243934] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Cuda: {0..32767}:TL_UCP:10=ucc_tl_ucp_reduce_knomial_init {32K..inf}:TL_UCP:10=ucc_tl_ucp_reduce_srg_knomial_init 
+[1750190108.243934] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	CudaManaged: {0..32767}:TL_UCP:10=ucc_tl_ucp_reduce_knomial_init {32K..inf}:TL_UCP:10=ucc_tl_ucp_reduce_srg_knomial_init 
+[1750190108.243949] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  Reduce_scatter:
+[1750190108.243949] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Host: {0..inf}:TL_UCP:10=ucc_tl_ucp_reduce_scatter_ring_init 
+[1750190108.243949] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Cuda: {0..inf}:TL_CUDA:10=ucc_tl_cuda_reduce_scatter_init 
+[1750190108.243949] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	CudaManaged: {0..inf}:TL_UCP:10=ucc_tl_ucp_reduce_scatter_ring_init 
+[1750190108.243964] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  Reduce_scatterv:
+[1750190108.243964] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Host: {0..inf}:TL_UCP:10=ucc_tl_ucp_reduce_scatterv_ring_init 
+[1750190108.243964] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Cuda: {0..inf}:TL_CUDA:10=ucc_tl_cuda_reduce_scatterv_init 
+[1750190108.243964] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	CudaManaged: {0..inf}:TL_UCP:10=ucc_tl_ucp_reduce_scatterv_ring_init 
+[1750190108.243980] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  Scatterv:
+[1750190108.243980] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Host: {0..inf}:TL_UCP:10=ucc_tl_ucp_coll_init 
+[1750190108.243980] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	Cuda: {0..inf}:TL_UCP:10=ucc_tl_ucp_coll_init 
+[1750190108.243980] [gpu06:22377:0] ucc_coll_score_map.c:225  UCC  INFO  	CudaManaged: {0..inf}:TL_UCP:10=ucc_tl_ucp_coll_init 
+[1750190108.243986] [gpu06:22377:0]        ucc_team.c:475  UCC  INFO  ================================================
+[1750190108.246834] [gpu06:22379:0] ec_cuda_executor.c:48   cuda ec DEBUG executor init, eee: 0x7f4fd94007c0
+[1750190108.247175] [gpu06:22378:0] ec_cuda_executor.c:48   cuda ec DEBUG executor init, eee: 0x7feecb4007c0
+[1750190108.247161] [gpu06:22380:0] ec_cuda_executor.c:48   cuda ec DEBUG executor init, eee: 0x7fbde14007c0
+[1750190108.247192] [gpu06:22377:0] ec_cuda_executor.c:48   cuda ec DEBUG executor init, eee: 0x7fee054007c0
+[1750190108.255586] [gpu06:22380:0] ec_cuda_executor.c:79   cuda ec DEBUG executor free, eee: 0x7fbde14007c0
+Finalize CCL[1750190108.255696] [gpu06:22380:0]    tl_cuda_team.c:143  TL_CUDA DEBUG finalizing tl team: 0x3cbdf830
+[1750190108.255747] [gpu06:22380:0]   tl_cuda_cache.c:312  UCC  DEBUG ipc-cache: tl_cuda unmap addr:0x7fedde000000 region:0x3cbcde30 [0x7fedde000000..0x7fede0000000]
+[1750190108.255872] [gpu06:22380:0]   tl_cuda_cache.c:312  UCC  DEBUG ipc-cache: tl_cuda unmap addr:0x7feea4000000 region:0x3c426c90 [0x7feea4000000..0x7feea6000000]
+[1750190108.255892] [gpu06:22379:0] ec_cuda_executor.c:79   cuda ec DEBUG executor free, eee: 0x7f4fd94007c0
+[1750190108.255931] [gpu06:22380:0]   tl_cuda_cache.c:312  UCC  DEBUG ipc-cache: tl_cuda unmap addr:0x7f4fb0000000 region:0x3c427b40 [0x7f4fb0000000..0x7f4fb2000000]
+Finalize CCL[1750190108.256010] [gpu06:22379:0]    tl_cuda_team.c:143  TL_CUDA DEBUG finalizing tl team: 0x1cbcaf40
+[1750190108.256071] [gpu06:22379:0]   tl_cuda_cache.c:312  UCC  DEBUG ipc-cache: tl_cuda unmap addr:0x7fedde000000 region:0x1c44fbe0 [0x7fedde000000..0x7fede0000000]
+[1750190108.256070] [gpu06:22380:0]     tl_ucp_team.c:122  TL_UCP DEBUG finalizing tl team: 0x3cd245a0
+[1750190108.256087] [gpu06:22380:0]   cl_basic_team.c:61   CL_BASIC DEBUG finalizing cl team: 0x3b4fc290
+[1750190108.256101] [gpu06:22380:0] cl_basic_context.c:57   CL_BASIC DEBUG finalizing cl context: 0x3c9ecac0
+[1750190108.256106] [gpu06:22380:0] tl_cuda_context.c:81   TL_CUDA DEBUG finalizing tl context: 0x3c470190
+[1750190108.256120] [gpu06:22380:0] tl_self_context.c:39   TL_SELF DEBUG finalizing tl context: 0x3c4704a0
+[1750190108.256125] [gpu06:22380:0]     tl_ucp_team.c:122  TL_UCP DEBUG finalizing tl team: 0x3c9fd040
+[1750190108.256129] [gpu06:22380:0]  tl_ucp_context.c:442  TL_UCP DEBUG finalizing tl context: 0x3b4fc140
+[UCC OOB] Rank 3: Performing Iallgather with msglen = 1
+[UCC OOB] Rank 3: sbuf = 0x7ffc84b910f3, rbuf = 0x3c4258a0
+[UCC OOB] Rank 3 sbuf[0] = 59
+[UCC OOB] Rank 3 rbuf[0] = 213
+[UCC OOB] Rank 3: sendtype = MPIR_UINT8 (0x4c00083e), recvtype = MPIR_UINT8 (0x4c00083e)
+[DBG] Rank 3 sees comm->remote_size = 4, local_size = 4
+[1750190108.256196] [gpu06:22378:0] ec_cuda_executor.c:79   cuda ec DEBUG executor free, eee: 0x7feecb4007c0
+[1750190108.256185] [gpu06:22379:0]   tl_cuda_cache.c:312  UCC  DEBUG ipc-cache: tl_cuda unmap addr:0x7feea4000000 region:0x1c410aa0 [0x7feea4000000..0x7feea6000000]
+[1750190108.256245] [gpu06:22379:0]   tl_cuda_cache.c:312  UCC  DEBUG ipc-cache: tl_cuda unmap addr:0x7fbdba000000 region:0x1c411930 [0x7fbdba000000..0x7fbdbc000000]
+Finalize CCL[1750190108.256301] [gpu06:22378:0]    tl_cuda_team.c:143  TL_CUDA DEBUG finalizing tl team: 0x3d782830
+  [1750190108.256345] [gpu06:22378:0]   tl_cuda_cache.c:312  UCC  DEBUG ipc-cache: tl_cuda unmap addr:0x7fedde000000 region:0x3d782cc0 [0x7fedde000000..0x7fede0000000]
+[1750190108.256352] [gpu06:22377:0] ec_cuda_executor.c:79   cuda ec DEBUG executor free, eee: 0x7fee054007c0
+Allreduce result: 6
+[1750190108.256394] [gpu06:22379:0]     tl_ucp_team.c:122  TL_UCP DEBUG finalizing tl team: 0x1cd0fd10
+[1750190108.256409] [gpu06:22379:0]   cl_basic_team.c:61   CL_BASIC DEBUG finalizing cl team: 0x1b4e7290
+[1750190108.256423] [gpu06:22379:0] cl_basic_context.c:57   CL_BASIC DEBUG finalizing cl context: 0x1c9d7d40
+Finalize CCL[1750190108.256427] [gpu06:22379:0] tl_cuda_context.c:81   TL_CUDA DEBUG finalizing tl context: 0x1c45afd0
+[1750190108.256438] [gpu06:22379:0] tl_self_context.c:39   TL_SELF DEBUG finalizing tl context: 0x1c45b3c0
+[1750190108.256443] [gpu06:22379:0]     tl_ucp_team.c:122  TL_UCP DEBUG finalizing tl team: 0x1c9e84b0
+[1750190108.256447] [gpu06:22379:0]  tl_ucp_context.c:442  TL_UCP DEBUG finalizing tl context: 0x1b4e7140
+[1750190108.256457] [gpu06:22378:0]   tl_cuda_cache.c:312  UCC  DEBUG ipc-cache: tl_cuda unmap addr:0x7f4fb0000000 region:0x3cfda080 [0x7f4fb0000000..0x7f4fb2000000]
+[1750190108.256467] [gpu06:22377:0]    tl_cuda_team.c:143  TL_CUDA DEBUG finalizing tl team: 0x3895b470
+[UCC OOB] Rank 2: Performing Iallgather with msglen = 1
+[UCC OOB] Rank 2: sbuf = 0x7ffe174cc053, rbuf = 0x1c40f740
+[UCC OOB] Rank 2 sbuf[0] = 27
+[UCC OOB] Rank 2 rbuf[0] = 159
+[UCC OOB] Rank 2: sendtype = MPIR_UINT8 (0x4c00083e), recvtype = MPIR_UINT8 (0x4c00083e)
+[DBG] Rank 2 sees comm->remote_size = 4, local_size = 4
+[1750190108.256507] [gpu06:22378:0]   tl_cuda_cache.c:312  UCC  DEBUG ipc-cache: tl_cuda unmap addr:0x7fbdba000000 region:0x3cfdaf10 [0x7fbdba000000..0x7fbdbc000000]
+[1750190108.256526] [gpu06:22377:0]   tl_cuda_cache.c:312  UCC  DEBUG ipc-cache: tl_cuda unmap addr:0x7feea4000000 region:0x3895bb50 [0x7feea4000000..0x7feea6000000]
+[1750190108.256644] [gpu06:22377:0]   tl_cuda_cache.c:312  UCC  DEBUG ipc-cache: tl_cuda unmap addr:0x7f4fb0000000 region:0x381a3330 [0x7f4fb0000000..0x7f4fb2000000]
+[1750190108.256700] [gpu06:22378:0]     tl_ucp_team.c:122  TL_UCP DEBUG finalizing tl team: 0x3d799640
+[1750190108.256713] [gpu06:22378:0]   cl_basic_team.c:61   CL_BASIC DEBUG finalizing cl team: 0x3c0b0290
+[1750190108.256723] [gpu06:22378:0] cl_basic_context.c:57   CL_BASIC DEBUG finalizing cl context: 0x3d5a0860
+[1750190108.256728] [gpu06:22378:0] tl_cuda_context.c:81   TL_CUDA DEBUG finalizing tl context: 0x3d023f80
+[1750190108.256738] [gpu06:22378:0] tl_self_context.c:39   TL_SELF DEBUG finalizing tl context: 0x3d024290
+[1750190108.256743] [gpu06:22378:0]     tl_ucp_team.c:122  TL_UCP DEBUG finalizing tl team: 0x3d5b1ac0
+[1750190108.256742] [gpu06:22377:0]   tl_cuda_cache.c:312  UCC  DEBUG ipc-cache: tl_cuda unmap addr:0x7fbdba000000 region:0x381a41c0 [0x7fbdba000000..0x7fbdbc000000]
+[1750190108.256745] [gpu06:22378:0]  tl_ucp_context.c:442  TL_UCP DEBUG finalizing tl context: 0x3c0b0140
+[UCC OOB] Rank 1: Performing Iallgather with msglen = 1
+[UCC OOB] Rank 1: sbuf = 0x7ffd252fcda3, rbuf = 0x3cfd8c90
+[UCC OOB] Rank 1 sbuf[0] = 60
+[UCC OOB] Rank 1 rbuf[0] = 56
+[UCC OOB] Rank 1: sendtype = MPIR_UINT8 (0x4c00083e), recvtype = MPIR_UINT8 (0x4c00083e)
+[DBG] Rank 1 sees comm->remote_size = 4, local_size = 4
+[1750190108.256907] [gpu06:22377:0]     tl_ucp_team.c:122  TL_UCP DEBUG finalizing tl team: 0x38aa0a20
+[1750190108.256921] [gpu06:22377:0]   cl_basic_team.c:61   CL_BASIC DEBUG finalizing cl team: 0x37278290
+[1750190108.256926] [gpu06:22377:0]        ucc_team.c:529  UCC  INFO  team destroyed, team_id 1
+[1750190108.256933] [gpu06:22377:0] cl_basic_context.c:57   CL_BASIC DEBUG finalizing cl context: 0x38768fa0
+[1750190108.256938] [gpu06:22377:0] tl_cuda_context.c:81   TL_CUDA DEBUG finalizing tl context: 0x381ecc70
+[1750190108.256951] [gpu06:22377:0] tl_self_context.c:39   TL_SELF DEBUG finalizing tl context: 0x381ecf80
+[1750190108.256956] [gpu06:22377:0]     tl_ucp_team.c:122  TL_UCP DEBUG finalizing tl team: 0x38779840
+[1750190108.256959] [gpu06:22377:0]  tl_ucp_context.c:442  TL_UCP DEBUG finalizing tl context: 0x37278140
+[UCC OOB] Rank 0: Performing Iallgather with msglen = 1
+[UCC OOB] Rank 0: sbuf = 0x7ffe658bb943, rbuf = 0x3716c5f0
+[UCC OOB] Rank 0 sbuf[0] = 55
+[UCC OOB] Rank 0 rbuf[0] = 252
+[UCC OOB] Rank 0: sendtype = MPIR_UINT8 (0x4c00083e), recvtype = MPIR_UINT8 (0x4c00083e)
+[DBG] Rank 0 sees comm->remote_size = 4, local_size = 4
+[1750190108.257047] [gpu06:22378:0]        ucc_team.c:550  UCC  ERROR team 0x3d179150 is used before team_create is completed
+[1750190108.257046] [gpu06:22380:0]        ucc_team.c:550  UCC  ERROR team 0x3c5c5b30 is used before team_create is completed
+[1750190108.257079] [gpu06:22377:0]        ucc_team.c:550  UCC  ERROR team 0x38343c00 is used before team_create is completed
+[1750190108.257080] [gpu06:22379:0]        ucc_team.c:550  UCC  ERROR team 0x1c5b0ac0 is used before team_create is completed
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   PID 22379 RUNNING AT gpu06
+=   EXIT CODE: 6
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Aborted (signal 6)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions

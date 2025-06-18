@@ -3,7 +3,8 @@
 #include <string.h>
 #include <mpi.h>
 #include <ucc/api/ucc.h>
-
+#include <unistd.h>   // for getpid(), sleep()
+#include <stdio.h>    // for printf(), fflush()
 #define UCC_CHECK(status)                          \
     do {                                           \
         ucc_status_t ucc_status = status;          \
@@ -48,7 +49,7 @@ uint64_t correct_answer(int n_ranks, int bytes) {
     uint64_t element_wise_sum = (n_ranks * (n_ranks - 1)) / 2;
     return element_wise_sum * bytes; 
 }
-
+volatile int i = 0;
 int main(int argc, char **argv)
 {
     int buff_size = 0;
@@ -63,6 +64,13 @@ int main(int argc, char **argv)
     MPI_Init(&argc, &argv);
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
     MPI_Comm_size(MPI_COMM_WORLD, &size);
+
+    char hostname[256];
+    gethostname(hostname, sizeof(hostname));
+    printf("Rank %d PID %d on %s ready for attach\n", rank, getpid(), hostname);
+    fflush(stdout);
+    int t = 0;
+    while (i == 0) sleep(1);
 
     ucc_lib_h lib;
     ucc_lib_config_h lib_config;
@@ -140,7 +148,7 @@ int main(int argc, char **argv)
             }
         },
         .op = UCC_OP_SUM,
-//        .flags = 0 
+        .flags = 0 
     };
 
 

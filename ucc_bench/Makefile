@@ -21,7 +21,7 @@ RPATH = -Wl,-rpath,$(UCC_INSTALL)/lib \
         -Wl,-rpath,$(CUDA_HOME)/lib64
 
 # === Source and target ===
-SRC = test_cuda_mpi.c
+SRC = extensive_ucc_bench.c
 TARGET = ucc_allreduce_bench
 
 # === Build rules ===
