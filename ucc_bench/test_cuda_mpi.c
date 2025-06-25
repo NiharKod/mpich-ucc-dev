@@ -8,7 +8,7 @@ volatile int i = 0;
 
 int main(int argc, char** argv) {
     MPI_Init(&argc, &argv);
-    int dummy;
+    //int dummy;
     int rank;
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 

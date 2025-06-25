@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <limits.h>
 
-#define NITER 1000
+#define NITER 1
 
 #define CUDA_CALL(call)                                                   \
     do {                                                                  \
@@ -36,8 +36,8 @@ int main(int argc, char** argv) {
 
     // allocate one int on device for send/recv
     int *d_send, *d_recv;
-    CUDA_CALL(cudaMalloc(&d_send, sizeof(int)));
-    CUDA_CALL(cudaMalloc(&d_recv, sizeof(int)));
+    CUDA_CALL(cudaMalloc((void **)&d_send, sizeof(int)));
+    CUDA_CALL(cudaMalloc((void**)&d_recv, sizeof(int)));
 
     // list of ops to test
     MPI_Op ops[]       = { MPI_SUM,  MPI_PROD,  MPI_MIN,    MPI_MAX };

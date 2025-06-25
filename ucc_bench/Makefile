@@ -1,13 +1,13 @@
 # === Installation paths ===
 UCC_INSTALL = /home/nkodkani/ucc/build/install
 UCX_INSTALL = /home/nkodkani/ucx/build/install
-CUDA_HOME   = /soft/compilers/cuda/cuda-12.3.0
+CUDA_HOME   = /soft/compilers/cuda/cuda-12.2.2
 
 # === Compiler ===
-CC = /home/nkodkani/mpich/build/install/bin/mpicc
+CC = /home/nkodkani/mpich_ucc/build/install/bin/mpicc
 
 # === Include and Link flags ===
-CFLAGS = -g -O0 \
+CFLAGS = -g -O3 \
 				 -I$(UCC_INSTALL)/include \
          -I$(UCX_INSTALL)/include \
          -I$(CUDA_HOME)/include
