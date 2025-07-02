@@ -33,8 +33,6 @@ def main():
     directories = [
         '/home/nkodkani/osu-micro-ucc',
         '/home/nkodkani/osu-micro-nccl',
-        '/home/nkodkani/osu-micro-native',
-        '/home/nkodkani/osu-micro-native-nodevice'
     ]
 
     cwd = os.getcwd()
