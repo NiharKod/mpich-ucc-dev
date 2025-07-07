@@ -1,0 +1,234 @@
+=== osu-micro-ucc Trial 1 ===
+
+# OSU MPI-CUDA Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+[gpu2:0:1335184 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:0:1335184 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:1:1335185 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:1:1335185 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:2:1335186 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:2:1335186 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:4:1335188 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:4:1335188 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:5:1335189 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:5:1335189 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:6:1335190 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:6:1335190 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:7:1335191 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:7:1335191 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:3:1335187 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:3:1335187 - context.c:316] ERROR Failed to parse ib device list: 
+4                      48.01
+8                      48.19
+16                     41.97
+32                     48.24
+64                     61.30
+128                    85.61
+256                    61.72
+512                    68.79
+1024                   93.41
+2048                   77.84
+4096                  173.79
+8192                  144.42
+16384                 126.36
+32768                 128.16
+65536                 128.87
+131072                129.88
+262144                131.67
+524288                135.74
+1048576               143.58
+2097152               156.13
+4194304               180.42
+8388608               225.92
+16777216              327.16
+33554432              526.27
+67108864              915.44
+
+=== osu-micro-ucc Trial 2 ===
+
+# OSU MPI-CUDA Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+[gpu2:0:1335458 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:0:1335458 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:1:1335459 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:1:1335459 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:2:1335460 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:2:1335460 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:4:1335462 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:4:1335462 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:5:1335463 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:5:1335463 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:6:1335464 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:6:1335464 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:7:1335465 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:7:1335465 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:3:1335461 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:3:1335461 - context.c:316] ERROR Failed to parse ib device list: 
+4                      47.93
+8                      47.34
+16                     41.22
+32                     48.58
+64                     60.64
+128                    85.24
+256                    60.73
+512                    66.62
+1024                   90.91
+2048                   75.70
+4096                  175.68
+8192                  144.66
+16384                 124.78
+32768                 129.79
+65536                 127.75
+131072                128.35
+262144                130.24
+524288                133.63
+1048576               140.14
+2097152               153.98
+4194304               179.76
+8388608               226.20
+16777216              317.56
+33554432              521.75
+67108864              898.86
+
+=== osu-micro-ucc Trial 3 ===
+
+# OSU MPI-CUDA Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+[gpu2:0:1335570 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:0:1335570 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:1:1335571 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:1:1335571 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:4:1335574 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:4:1335574 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:5:1335575 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:5:1335575 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:6:1335576 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:6:1335576 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:7:1335577 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:7:1335577 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:2:1335572 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:2:1335572 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:3:1335573 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:3:1335573 - context.c:316] ERROR Failed to parse ib device list: 
+4                      46.26
+8                      46.67
+16                     40.52
+32                     47.47
+64                     58.97
+128                    83.70
+256                    60.37
+512                    66.26
+1024                   88.74
+2048                   73.43
+4096                  174.39
+8192                  149.83
+16384                 134.23
+32768                 127.47
+65536                 127.80
+131072                128.91
+262144                129.97
+524288                152.96
+1048576               144.95
+2097152               177.51
+4194304               179.41
+8388608               240.58
+16777216              328.77
+33554432              508.07
+67108864              891.11
+
+=== osu-micro-nccl Trial 1 ===
+
+# OSU MPI-CUDA Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                      36.44
+8                      33.90
+16                     31.92
+32                     32.28
+64                     33.38
+128                    37.06
+256                    34.86
+512                    33.29
+1024                   31.67
+2048                   31.98
+4096                   34.33
+8192                   31.81
+16384                  32.90
+32768                  36.34
+65536                  37.39
+131072                 37.95
+262144                 38.62
+524288                 43.84
+1048576                51.18
+2097152                66.41
+4194304                98.63
+8388608               139.68
+16777216              224.82
+33554432              381.50
+67108864              614.63
+
+=== osu-micro-nccl Trial 2 ===
+
+# OSU MPI-CUDA Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                      31.58
+8                      31.61
+16                     31.31
+32                     32.22
+64                     33.57
+128                    37.18
+256                    35.52
+512                    34.14
+1024                   31.69
+2048                   31.28
+4096                   31.54
+8192                   31.95
+16384                  32.82
+32768                  36.60
+65536                  37.61
+131072                 38.13
+262144                 38.91
+524288                 43.68
+1048576                51.55
+2097152                66.09
+4194304                91.54
+8388608               140.15
+16777216              224.85
+33554432              381.73
+67108864              614.68
+
+=== osu-micro-nccl Trial 3 ===
+
+# OSU MPI-CUDA Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                      32.96
+8                      31.41
+16                     31.36
+32                     31.92
+64                     33.45
+128                    36.50
+256                    36.15
+512                    35.89
+1024                   31.66
+2048                   31.16
+4096                   31.40
+8192                   31.90
+16384                  32.99
+32768                  55.41
+65536                  37.90
+131072                 37.52
+262144                 39.33
+524288                 42.50
+1048576                50.95
+2097152                67.18
+4194304                91.46
+8388608               139.44
+16777216              233.38
+33554432              381.32
+67108864              614.53
+

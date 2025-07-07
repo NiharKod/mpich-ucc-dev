@@ -1,0 +1,141 @@
+=== osu-micro-ucc Trial 1 ===
+
+# OSU MPI-CUDA Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+[gpu2:0:921544 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:0:921544 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:1:921545 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:1:921545 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:2:921546 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:2:921546 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:4:921548 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:4:921548 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:5:921549 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:5:921549 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:6:921550 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:6:921550 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:7:921551 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:7:921551 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:3:921547 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:3:921547 - context.c:316] ERROR Failed to parse ib device list: 
+4                      47.28
+8                      47.00
+16                     41.00
+32                     47.31
+64                     58.86
+128                    81.26
+256                    56.94
+512                    63.65
+1024                   84.53
+2048                   76.06
+4096                  164.26
+8192                  140.84
+16384                 124.38
+32768                 126.69
+65536                 127.48
+131072                128.42
+262144                129.66
+524288                134.50
+1048576               140.33
+2097152               154.54
+4194304               179.58
+8388608               226.63
+16777216              324.49
+33554432              513.45
+67108864              884.96
+
+=== osu-micro-ucc Trial 2 ===
+
+# OSU MPI-CUDA Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+[gpu2:0:921915 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:0:921915 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:1:921916 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:1:921916 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:2:921917 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:2:921917 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:4:921919 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:4:921919 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:5:921920 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:5:921920 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:6:921921 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:6:921921 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:7:921922 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:7:921922 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:3:921918 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:3:921918 - context.c:316] ERROR Failed to parse ib device list: 
+4                      47.36
+8                      48.21
+16                     41.11
+32                     47.53
+64                     60.24
+128                    85.15
+256                    59.15
+512                    65.56
+1024                   90.56
+2048                   76.78
+4096                  178.76
+8192                  143.36
+16384                 125.72
+32768                 127.33
+65536                 128.51
+131072                129.26
+262144                130.89
+524288                135.65
+1048576               141.94
+2097152               156.45
+4194304               192.37
+8388608               224.36
+16777216              317.34
+33554432              504.15
+67108864              867.97
+
+=== osu-micro-ucc Trial 3 ===
+
+# OSU MPI-CUDA Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+[gpu2:0:922296 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:0:922296 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:1:922297 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:1:922297 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:2:922298 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:2:922298 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:3:922299 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:3:922299 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:4:922300 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:4:922300 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:5:922301 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:5:922301 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:6:922302 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:6:922302 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:7:922303 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:7:922303 - context.c:316] ERROR Failed to parse ib device list: 
+4                      47.14
+8                      47.79
+16                     41.49
+32                     47.92
+64                     60.97
+128                    86.15
+256                    63.11
+512                    67.92
+1024                   90.64
+2048                   76.40
+4096                  176.08
+8192                  143.81
+16384                 124.93
+32768                 126.91
+65536                 128.14
+131072                128.50
+262144                130.81
+524288                134.41
+1048576               141.08
+2097152               155.21
+4194304               180.30
+8388608               232.56
+16777216              317.73
+33554432              512.71
+67108864              896.62
+

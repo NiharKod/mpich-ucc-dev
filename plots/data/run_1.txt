@@ -1,0 +1,420 @@
+=== osu-micro-ucc Trial 1 ===
+
+# OSU MPI-CUDA Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+[gpu2:0:932945 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:0:932945 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:1:932946 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:1:932946 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:2:932947 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:2:932947 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:4:932949 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:4:932949 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:5:932950 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:5:932950 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:6:932951 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:6:932951 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:7:932952 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:7:932952 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:3:932948 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:3:932948 - context.c:316] ERROR Failed to parse ib device list: 
+4                      47.12
+8                      47.28
+16                     40.75
+32                     47.35
+64                     59.65
+128                    83.45
+256                    58.48
+512                    65.21
+1024                   87.68
+2048                   75.11
+4096                  161.68
+8192                  140.25
+16384                 123.71
+32768                 126.47
+65536                 126.93
+131072                133.06
+262144                131.38
+524288                134.58
+1048576               141.05
+2097152               154.75
+4194304               179.91
+8388608               224.61
+16777216              320.61
+33554432              500.87
+67108864              888.72
+
+=== osu-micro-ucc Trial 2 ===
+
+# OSU MPI-CUDA Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+[gpu2:0:933189 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:0:933189 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:1:933190 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:1:933190 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:2:933191 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:2:933191 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:3:933192 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:3:933192 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:4:933193 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:4:933193 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:5:933194 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:5:933194 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:6:933195 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:6:933195 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:7:933196 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:7:933196 - context.c:316] ERROR Failed to parse ib device list: 
+4                      47.13
+8                      47.72
+16                     42.38
+32                     47.47
+64                     59.81
+128                    83.77
+256                    58.90
+512                    63.56
+1024                   87.27
+2048                   75.92
+4096                  168.95
+8192                  149.55
+16384                 124.58
+32768                 129.15
+65536                 127.12
+131072                128.00
+262144                130.04
+524288                134.35
+1048576               141.12
+2097152               154.93
+4194304               178.68
+8388608               222.86
+16777216              324.20
+33554432              520.20
+67108864              897.06
+
+=== osu-micro-ucc Trial 3 ===
+
+# OSU MPI-CUDA Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+[gpu2:0:933525 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:0:933525 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:1:933526 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:1:933526 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:2:933527 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:2:933527 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:3:933528 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:3:933528 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:4:933529 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:4:933529 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:5:933530 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:5:933530 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:6:933531 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:6:933531 - context.c:316] ERROR Failed to parse ib device list: 
+[gpu2:7:933532 - dev.c:123] ERROR Not found valid hca ports
+[gpu2:7:933532 - context.c:316] ERROR Failed to parse ib device list: 
+4                      47.63
+8                      47.45
+16                     41.22
+32                     47.72
+64                     60.44
+128                    85.08
+256                    61.69
+512                    67.95
+1024                   92.14
+2048                   76.26
+4096                  177.97
+8192                  146.89
+16384                 125.30
+32768                 127.44
+65536                 127.82
+131072                135.98
+262144                130.50
+524288                136.31
+1048576               140.87
+2097152               155.65
+4194304               180.18
+8388608               226.78
+16777216              314.29
+33554432              506.80
+67108864              908.73
+
+=== osu-micro-nccl Trial 1 ===
+
+# OSU MPI-CUDA Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                      33.29
+8                      33.33
+16                     31.33
+32                     32.29
+64                     33.88
+128                    37.01
+256                    35.30
+512                    33.97
+1024                   34.66
+2048                   31.27
+4096                   31.49
+8192                   31.94
+16384                  33.11
+32768                  36.52
+65536                  37.60
+131072                 38.14
+262144                 38.77
+524288                 43.63
+1048576                51.75
+2097152                75.95
+4194304                91.15
+8388608               139.52
+16777216              225.14
+33554432              388.28
+67108864              618.38
+
+=== osu-micro-nccl Trial 2 ===
+
+# OSU MPI-CUDA Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                      34.23
+8                      31.60
+16                     31.74
+32                     32.04
+64                     33.52
+128                    36.94
+256                    35.71
+512                    33.52
+1024                   31.58
+2048                   31.25
+4096                   32.37
+8192                   32.86
+16384                  32.88
+32768                  36.42
+65536                  37.49
+131072                 38.90
+262144                 38.43
+524288                 45.75
+1048576                50.17
+2097152                74.56
+4194304                91.05
+8388608               138.91
+16777216              225.45
+33554432              383.40
+67108864              614.60
+
+=== osu-micro-nccl Trial 3 ===
+
+# OSU MPI-CUDA Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                      31.64
+8                      32.84
+16                     31.43
+32                     32.14
+64                     33.18
+128                    35.77
+256                    34.73
+512                    31.76
+1024                   31.54
+2048                   31.43
+4096                   33.53
+8192                   31.90
+16384                  32.85
+32768                  36.34
+65536                  37.55
+131072                 37.92
+262144                 39.28
+524288                 43.36
+1048576                51.61
+2097152                67.06
+4194304                91.39
+8388608               145.43
+16777216              225.02
+33554432              381.49
+67108864              614.57
+
+=== osu-micro-native Trial 1 ===
+
+# OSU MPI-CUDA Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                      40.06
+8                      39.39
+16                     38.58
+32                     40.69
+64                     37.63
+128                    37.72
+256                    38.85
+512                    39.91
+1024                   41.44
+2048                   43.21
+4096                   45.28
+8192                   50.45
+16384                  66.11
+32768                 103.00
+65536                 150.13
+131072                234.85
+262144                420.17
+524288                783.99
+1048576              1526.06
+2097152              1752.15
+4194304              3185.25
+8388608              4520.91
+16777216             8190.29
+33554432            21486.11
+67108864            45301.05
+
+=== osu-micro-native Trial 2 ===
+
+# OSU MPI-CUDA Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                      39.63
+8                      37.89
+16                     35.74
+32                     35.53
+64                     35.85
+128                    36.21
+256                    36.62
+512                    37.20
+1024                   38.86
+2048                   39.72
+4096                   42.37
+8192                   47.02
+16384                  60.98
+32768                 106.84
+65536                 158.31
+131072                244.07
+262144                438.88
+524288                805.67
+1048576              1677.34
+2097152              1335.33
+4194304              2003.01
+8388608              3343.65
+16777216             6307.20
+33554432            19312.86
+67108864            38715.13
+
+=== osu-micro-native Trial 3 ===
+
+# OSU MPI-CUDA Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                      37.40
+8                      35.53
+16                     33.05
+32                     37.43
+64                     37.48
+128                    37.57
+256                    38.93
+512                    39.49
+1024                   41.07
+2048                   42.60
+4096                   45.65
+8192                   49.51
+16384                  63.38
+32768                  97.41
+65536                 148.04
+131072                218.89
+262144                396.95
+524288                721.87
+1048576              1434.28
+2097152              1478.28
+4194304              2899.04
+8388608              5232.79
+16777216            10678.74
+33554432            26746.94
+67108864            55019.86
+
+=== osu-micro-native-nodevice Trial 1 ===
+
+# OSU MPI-CUDA Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                     127.61
+8                     109.24
+16                     91.77
+32                    110.66
+64                    110.49
+128                   117.95
+256                   143.70
+512                   150.54
+1024                  160.61
+2048                  174.40
+4096                  200.22
+8192                  226.19
+16384                 212.74
+32768                 227.84
+65536                 251.14
+131072                286.48
+262144                371.08
+524288                542.25
+1048576               749.39
+2097152              1322.85
+4194304              2271.13
+8388608              4532.88
+16777216            10155.24
+33554432            27923.15
+67108864            51215.89
+
+=== osu-micro-native-nodevice Trial 2 ===
+
+# OSU MPI-CUDA Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                      99.69
+8                      99.12
+16                     95.43
+32                    117.25
+64                    117.41
+128                   122.95
+256                   145.44
+512                   153.46
+1024                  164.17
+2048                  180.38
+4096                  205.55
+8192                  231.18
+16384                 223.85
+32768                 233.49
+65536                 256.04
+131072                288.14
+262144                354.92
+524288                456.98
+1048576               674.64
+2097152              1082.90
+4194304              1953.55
+8388608              3405.92
+16777216             6813.78
+33554432            19815.99
+67108864            41374.48
+
+=== osu-micro-native-nodevice Trial 3 ===
+
+# OSU MPI-CUDA Allreduce Latency Test v7.5
+# Datatype: MPI_INT.
+# Size       Avg Latency(us)
+4                     105.53
+8                      97.00
+16                     91.94
+32                    111.90
+64                    112.78
+128                   118.98
+256                   140.77
+512                   150.86
+1024                  161.55
+2048                  175.13
+4096                  201.96
+8192                  231.85
+16384                 223.62
+32768                 235.18
+65536                 253.33
+131072                289.75
+262144                359.41
+524288                490.27
+1048576               709.12
+2097152              1153.30
+4194304              2209.37
+8388608              3964.36
+16777216             8757.28
+33554432            20786.80
+67108864            46204.79
+
